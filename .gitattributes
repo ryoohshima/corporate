@@ -4,10 +4,6 @@
 # シェルスクリプトは LF 固定
 *.sh text eol=lf
 
-# Windows バッチは CRLF 固定
-*.bat text eol=crlf
-*.cmd text eol=crlf
-
 # バイナリ判定（diff 抑制）
 *.png binary
 *.jpg binary

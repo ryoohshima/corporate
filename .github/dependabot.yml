@@ -1,9 +1,3 @@
-# Dependabot 設定
-#
-# 依存関係の自動更新 PR を週次で起こす。
-# プロジェクトに該当するエコシステムが無い場合は `package-ecosystem` ブロックごと削除すること。
-# https://docs.github.com/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file
-
 version: 2
 
 updates:
