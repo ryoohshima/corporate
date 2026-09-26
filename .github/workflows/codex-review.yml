@@ -1,13 +1,3 @@
-# Codex による PR 自動レビュー雛形
-#
-# 使用方法:
-#   1. Repository Secret に OPENAI_API_KEY を設定
-#   2. このファイルを codex-review.yml にリネーム
-#
-# Codex は読み取り専用（:read-only）で差分をレビューし、結果を PR コメントとして投稿する。
-# Draft PR と Dependabot PR は対象外。fork からの PR には secrets が渡らないため実行されない。
-# https://github.com/openai/codex-action
-
 name: Codex Review
 
 on:
