@@ -2,7 +2,7 @@ name: Dependabot auto-merge
 
 on:
   workflow_run:
-    workflows: [CI, React Doctor]
+    workflows: [CI]
     types: [completed]
   schedule:
     - cron: '17 * * * *'
@@ -26,16 +26,14 @@ concurrency:
 
 jobs:
   merge:
-    # CI is not configured: only run manual diagnostics, without spending scheduled runner minutes.
-    if: github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
     timeout-minutes: 10
     env:
       GH_TOKEN: ${{ github.token }}
       GH_REPO: ${{ github.repository }}
       BASE_BRANCH: main
-      # Empty means paused until this repository has CI; never merge untested updates.
-      REQUIRED_CHECKS: '[]'
+      # ci.yml のジョブ名と一致させる。空なら自動マージは停止（未テストの更新はマージしない）
+      REQUIRED_CHECKS: '["lint", "typecheck", "build"]'
       DRY_RUN: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run }}
     steps:
       - name: Merge a tested Dependabot update
@@ -135,9 +133,6 @@ jobs:
                   if not result.get('merged'):
                       raise RuntimeError(f'Merge refused for #{pr["number"]}')
                   print(f'Merged #{pr["number"]}: {result["sha"]}')
-                  if os.environ.get('DEPLOY_WORKFLOW'):
-                      subprocess.run(['gh', 'workflow', 'run', os.environ['DEPLOY_WORKFLOW'],
-                                      '--repo', repo, '--ref', base], check=True)
                   # One merge per run lets Dependabot refresh sibling lockfiles before the next check.
                   break
 
