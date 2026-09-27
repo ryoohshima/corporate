@@ -1,6 +1,7 @@
 ---
 import { Image } from "astro:assets";
 import panis from "../assets/panis.jpg";
+import HeroFrames from "../components/HeroFrames.astro";
 
 const nav = [
   { href: "#approach", label: "Our approach" },
@@ -101,11 +102,16 @@ const principles = [
 
       <main>
         <section class="hero">
-          <p class="label">SAME TABLE. SHARED PROBLEM.</p>
-          <h1>同じテーブルで、<br />考える。</h1>
-          <p class="intro">
-            Panisiaは、依頼する側とつくる側を分けません。<br />あなたの知識と、私たちの技術を同じテーブルに<br />持ち寄り、ひとつの課題を一緒に考えます。
-          </p>
+          <div class="hero-main">
+            <div class="hero-copy">
+              <p class="label">SAME TABLE. SHARED PROBLEM.</p>
+              <h1>同じテーブルで、<br />考える。</h1>
+              <p class="intro">
+                Panisiaは、依頼する側とつくる側を分けません。<br />あなたの知識と、私たちの技術を同じテーブルに<br />持ち寄り、ひとつの課題を一緒に考えます。
+              </p>
+            </div>
+            <HeroFrames />
+          </div>
           <div class="hero-baseline">
             <p class="label">PANISIA / DESIGN &amp; TECHNOLOGY</p>
             <a class="label" href="#approach">EXPLORE OUR APPROACH ↓</a>
@@ -374,6 +380,7 @@ const principles = [
         }
       });
     </script>
+
   </body>
 </html>
 
@@ -553,6 +560,18 @@ const principles = [
   .intro {
     font-size: 17px;
     line-height: 32px;
+  }
+  .hero-main {
+    display: grid;
+    grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+    align-items: center;
+    gap: 48px;
+  }
+  .hero-copy { display: flex; flex-direction: column; gap: 36px; min-width: 0; }
+  @media (min-width: 801px) and (max-width: 1100px) {
+    .hero-main { gap: 24px; }
+    .hero h1 { font-size: 48px; line-height: 1.45; }
+    .hero .intro br { display: none; }
   }
   .hero-baseline {
     display: flex;
@@ -884,6 +903,8 @@ const principles = [
       font-size: 16px;
       line-height: 30px;
     }
+    .hero-main { grid-template-columns: 1fr; gap: 24px; }
+    .hero-copy { gap: 32px; }
     .hero-baseline {
       flex-direction: column;
       gap: 14px;
