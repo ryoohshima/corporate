@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="335 20 166 160" fill="none"><ellipse cx="418.178" cy="99.034" rx="37.6104" ry="37.6104" stroke="#A29283" stroke-width="1.2"/><ellipse cx="418.168" cy="99.0295" rx="34.5291" ry="34.5291" stroke="#A29283" stroke-width="1.2"/><g class="still"><svg x="358.406" y="38.754" width="119.164" height="120.346"
+<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="335 20 166 160" fill="none"><ellipse cx="418.178" cy="99.034" rx="37.6104" ry="37.6104" stroke="#A29283" stroke-width="1.2"/><ellipse cx="418.168" cy="99.0295" rx="34.5291" ry="34.5291" stroke="#A29283" stroke-width="1.2"/><g class="still"><svg aria-hidden="true" x="358.406" y="38.754" width="119.164" height="120.346"
         data-pencil-name="Top-down object outline 17"
         viewBox="-0.000003814697265625 0.000003814697265625 119.16373062133789 120.34624862670898"
         preserveAspectRatio="none"
@@ -13,7 +13,7 @@
           stroke-linejoin="miter"
           vector-effect="non-scaling-stroke"
         ></path>
-      </svg></g><g class="steam"><svg x="412.097" y="87.129" width="3.393" height="24.026"
+      </svg></g><g class="steam"><svg aria-hidden="true" x="412.097" y="87.129" width="3.393" height="24.026"
         data-pencil-name="Top-down object outline 20"
         viewBox="-0.0000050067901611328125 0 3.393213987350464 24.026248931884766"
         preserveAspectRatio="none"
@@ -28,7 +28,7 @@
           stroke-linejoin="miter"
           vector-effect="non-scaling-stroke"
         ></path>
-      </svg></g><g class="steam"><svg x="419.141" y="88.258" width="2.243" height="17.308"
+      </svg></g><g class="steam"><svg aria-hidden="true" x="419.141" y="88.258" width="2.243" height="17.308"
         data-pencil-name="Top-down object outline 21"
         viewBox="-0.0000011920928955078125 0 2.2426204681396484 17.307491302490234"
         preserveAspectRatio="none"
@@ -43,7 +43,7 @@
           stroke-linejoin="miter"
           vector-effect="non-scaling-stroke"
         ></path>
-      </svg></g><g class="still"><svg x="445.858" y="58.019" width="26.917" height="24.971"
+      </svg></g><g class="still"><svg aria-hidden="true" x="445.858" y="58.019" width="26.917" height="24.971"
         data-pencil-name="Top-down object outline 22"
         viewBox="0 0.000005066394805908203 26.916793823242188 24.97077625989914"
         preserveAspectRatio="none"
