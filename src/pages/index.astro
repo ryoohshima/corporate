@@ -409,10 +409,11 @@ const principles = [
           }).observe(canvas);
 
           const reduced = matchMedia("(prefers-reduced-motion: reduce)");
+          let visible = false;
           function updateMotion() {
-            if (reduced.matches || document.hidden) {
+            if (reduced.matches || document.hidden || !visible) {
               renderer.setAnimationLoop(null);
-              if (!document.hidden) renderer.render(scene, camera);
+              if (visible && !document.hidden) renderer.render(scene, camera);
             } else {
               renderer.setAnimationLoop((time) => {
                 shape.rotation.x = time * 0.00015;
@@ -423,6 +424,10 @@ const principles = [
           }
           reduced.addEventListener("change", updateMotion);
           document.addEventListener("visibilitychange", updateMotion);
+          new IntersectionObserver(([entry]) => {
+            visible = entry?.isIntersecting ?? false;
+            updateMotion();
+          }).observe(canvas);
           updateMotion();
         } catch {
           canvas.remove();
