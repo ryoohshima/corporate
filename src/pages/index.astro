@@ -2,6 +2,7 @@
 import { Image } from "astro:assets";
 import panis from "../assets/panis.jpg";
 import HeroFrames from "../components/HeroFrames.astro";
+import Coffee from "../components/Coffee.astro";
 
 const nav = [
   { href: "#approach", label: "Our approach" },
@@ -237,12 +238,7 @@ const principles = [
             <p class="label">06 / HOW WE WORK</p>
             <div class="process-heading">
               <h2 class="heading-md">同じ側で、進めていく。</h2>
-              <svg class="notebook" viewBox="0 0 180 160" aria-hidden="true">
-                <path d="M110.44 36.68H54.7v86.38h55.74z" />
-                <path d="M58.46 36.68v86.38" />
-                <path d="M125.3 40.74h-3.78v73.52l1.86 8.74 1.92-8.74z" />
-                <path d="M121.52 43.42h3.78" />
-              </svg>
+              <Coffee />
             </div>
             <ol class="process">
               {
@@ -747,12 +743,6 @@ const principles = [
   .process-heading h2 {
     flex: 1 1 0;
     line-height: normal;
-  }
-  .notebook {
-    flex-shrink: 0;
-    color: var(--line);
-    width: 180px;
-    height: 160px;
   }
   .process {
     display: grid;
