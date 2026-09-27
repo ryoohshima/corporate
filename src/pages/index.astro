@@ -325,14 +325,14 @@ const principles = [
     <script>
       // 天板の下端が画面下88%に来てから、画面高35%のスクロールで椅子を天板の下から引き出す
       const tabletop = document.querySelector<HTMLElement>(".tabletop");
+      const chair = document.querySelector<SVGSVGElement>(".chair");
       const root = document.documentElement;
-      const desktop = matchMedia("(min-width: 801px)");
       const reduced = matchMedia("(prefers-reduced-motion: reduce)");
       let frame = 0;
 
       function update() {
         frame = 0;
-        if (!tabletop || !desktop.matches || reduced.matches) {
+        if (!tabletop || !chair || reduced.matches) {
           root.style.removeProperty("--seat-offset");
           return;
         }
@@ -344,8 +344,9 @@ const principles = [
           Math.min(1, (trigger - edge) / (innerHeight * 0.35)),
         );
         const eased = progress * progress * (3 - 2 * progress);
-        // 初期位置は座面の約半分が天板に隠れる 97px 上
-        root.style.setProperty("--seat-offset", `${-97 * (1 - eased)}px`);
+        // 初期位置は座面の約半分が天板に隠れる位置（椅子の高さ 220px に対し 97px 上）
+        const tucked = (chair.getBoundingClientRect().height * 97) / 220;
+        root.style.setProperty("--seat-offset", `${-tucked * (1 - eased)}px`);
       }
       function schedule() {
         if (!frame && !document.hidden) frame = requestAnimationFrame(update);
@@ -353,7 +354,6 @@ const principles = [
 
       addEventListener("scroll", schedule, { passive: true });
       addEventListener("resize", schedule, { passive: true });
-      desktop.addEventListener("change", schedule);
       reduced.addEventListener("change", schedule);
       document.addEventListener("visibilitychange", schedule);
       update();
