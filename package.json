@@ -15,12 +15,14 @@
   },
   "dependencies": {
     "astro": "^7.3.5",
-    "sharp": "^0.35.4"
+    "sharp": "^0.35.4",
+    "three": "^0.186.1"
   },
   "private": true,
   "devDependencies": {
     "@astrojs/check": "^0.9.10",
     "@biomejs/biome": "^2.5.14",
+    "@types/three": "^0.186.0",
     "typescript": "^6.0.3"
   },
   "packageManager": "pnpm@11.6.0"
