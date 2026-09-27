@@ -118,37 +118,38 @@ const principles = [
           </div>
         </section>
 
-        <div class="seating" aria-hidden="true">
-          {
-            [0, 1].map(() => (
-              <svg class="chair" viewBox="0 0 220 220">
-                <rect x="55.825" y="68.148" width="108.35" height="109.345" />
-                <path d="M55.825 47.663V34.32h108.35v13.343" />
-              </svg>
-            ))
-          }
-        </div>
-
-        <div class="table">
-          <section id="approach" class="section">
+          <section id="approach" class="section table-section">
             <p class="label">01 / THE TABLE</p>
-            <div class="split">
-              <div class="stack">
-                <h2 class="contribution-heading">あなたが持ってくるもの</h2>
-                <ul class="contribution-list">
-                  {youBring.map((item) => <li>{item}</li>)}
-                </ul>
+            <div>
+              <div class="tabletop split">
+                <div class="stack">
+                  <h2 class="contribution-heading">あなたが<br />持ってくるもの</h2>
+                  <ul class="contribution-list">
+                    {youBring.map((item) => <li>{item}</li>)}
+                  </ul>
+                </div>
+                <div class="stack">
+                  <h2 class="contribution-heading">Panisiaが<br />持ってくるもの</h2>
+                  <ul class="contribution-list">
+                    {weBring.map((item) => <li>{item}</li>)}
+                  </ul>
+                </div>
               </div>
-              <div class="stack">
-                <h2 class="contribution-heading">Panisiaが持ってくるもの</h2>
-                <ul class="contribution-list">
-                  {weBring.map((item) => <li>{item}</li>)}
-                </ul>
+              <div class="seats" aria-hidden="true">
+                {
+                  [0, 1].map(() => (
+                    <div>
+                      <svg class="chair" viewBox="0 0 220 220">
+                        <rect x="55.825" y="68.148" width="108.35" height="109.345" rx="8" />
+                        <path d="M65.325 42h89.35a9.5 9.5 0 0 1 9.5 9.5V57a4 4 0 0 1-4 4H59.825a4 4 0 0 1-4-4v-5.5a9.5 9.5 0 0 1 9.5-9.5z" />
+                      </svg>
+                    </div>
+                  ))
+                }
               </div>
             </div>
-            <hr />
             <div class="common-problem">
-              <p class="same-side">違う知識を、同じ課題のために。</p>
+              <p class="same-side">違う知識を、<br />同じ課題のために。</p>
               <p class="label">YOU + PANISIA → A SHARED PROBLEM</p>
             </div>
           </section>
@@ -305,18 +306,6 @@ const principles = [
               </a>
             </div>
           </section>
-        </div>
-
-        <div class="seating seating-bottom" aria-hidden="true">
-          {
-            [0, 1].map(() => (
-              <svg class="chair" viewBox="0 0 220 220">
-                <rect x="55.825" y="68.148" width="108.35" height="109.345" />
-                <path d="M55.825 47.663V34.32h108.35v13.343" />
-              </svg>
-            ))
-          }
-        </div>
       </main>
 
       <footer class="site-footer">
@@ -334,40 +323,6 @@ const principles = [
     </div>
 
     <script>
-      // 天板の縁が画面下88%に来てから、画面高35%のスクロールで椅子を60px引き出す
-      const seating = document.querySelector<HTMLElement>(".seating");
-      const root = document.documentElement;
-      const desktop = matchMedia("(min-width: 801px)");
-      const reduced = matchMedia("(prefers-reduced-motion: reduce)");
-      let frame = 0;
-
-      function update() {
-        frame = 0;
-        if (!seating || !desktop.matches || reduced.matches) {
-          root.style.removeProperty("--seat-offset");
-          return;
-        }
-        // 動く椅子ではなく静止した天板の縁を読むので、引き出し自体が進捗に影響しない
-        const edge = seating.getBoundingClientRect().bottom;
-        const trigger = Math.min(innerHeight * 0.88, edge + scrollY);
-        const progress = Math.max(
-          0,
-          Math.min(1, (trigger - edge) / (innerHeight * 0.35)),
-        );
-        const eased = progress * progress * (3 - 2 * progress);
-        root.style.setProperty("--seat-offset", `${-60 * eased}px`);
-      }
-      function schedule() {
-        if (!frame && !document.hidden) frame = requestAnimationFrame(update);
-      }
-
-      addEventListener("scroll", schedule, { passive: true });
-      addEventListener("resize", schedule, { passive: true });
-      desktop.addEventListener("change", schedule);
-      reduced.addEventListener("change", schedule);
-      document.addEventListener("visibilitychange", schedule);
-      update();
-
       // モバイルメニュー: リンク選択・Esc で閉じる
       const menu = document.querySelector<HTMLDetailsElement>(".menu");
       menu?.addEventListener("click", (event) => {
@@ -396,7 +351,6 @@ const principles = [
     --sans: "Noto Sans JP", sans-serif;
     --latin: "Instrument Serif", serif;
     --ui: Inter, system-ui, sans-serif;
-    --seat-offset: -60px;
   }
   *,
   ::before,
@@ -580,44 +534,6 @@ const principles = [
     margin-top: -12px;
   }
 
-  /* Chairs: 天板（.table）が後から描画され、座面の下半分を隠す */
-  .seating {
-    position: relative;
-    z-index: 2;
-    display: flex;
-    justify-content: center;
-    gap: 68px;
-    height: 180px;
-    padding-top: 57px;
-  }
-  .chair {
-    flex-shrink: 0;
-    color: var(--line);
-    width: 220px;
-    height: 220px;
-    transform: translateY(var(--seat-offset));
-  }
-
-  /* 天板の下端：テーブル側を向いた椅子。上端で切り、座面を天板の下に隠す */
-  .seating-bottom {
-    z-index: 6;
-    height: 120px;
-    padding-top: 0;
-    overflow: hidden;
-  }
-  .seating-bottom .chair {
-    margin-top: -97px;
-    transform: rotate(180deg);
-  }
-
-  /* Table */
-  .table {
-    position: relative;
-    z-index: 5;
-    background: var(--bg);
-    outline: 1px solid var(--line);
-    outline-offset: -0.5px;
-  }
   .section {
     display: flex;
     flex-direction: column;
@@ -670,8 +586,49 @@ const principles = [
     font: 46px/64px var(--serif);
   }
 
+  /* Table: 天板の上に持ち寄ったものを並べ、奥に引き出した椅子を置く */
+  .table-section {
+    gap: 40px;
+    padding: 72px 48px 96px;
+  }
+  .tabletop {
+    padding: 64px 72px;
+    border-radius: 28px;
+    background: #e6dfd2;
+    box-shadow: 0 4px 0 #c9beac;
+  }
+  .seats {
+    display: flex;
+    gap: 80px;
+    padding: 0 72px;
+  }
+  .seats > div {
+    flex: 1 1 0;
+    display: flex;
+    justify-content: center;
+  }
+  .chair {
+    width: 220px;
+    height: 220px;
+    transform: scaleY(-1);
+  }
+  .chair rect,
+  .chair path {
+    stroke: #a79e8e;
+    stroke-width: 1.2;
+  }
+  .chair rect {
+    fill: #e6dfd2;
+  }
+  .chair path {
+    fill: #c9beac;
+  }
   .contribution-heading {
     font: 27px var(--serif);
+  }
+  .contribution-heading br,
+  .same-side br {
+    display: none;
   }
   .contribution-list {
     display: flex;
@@ -682,12 +639,13 @@ const principles = [
   }
   .common-problem {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    gap: 24px;
+    gap: 16px;
   }
   .same-side {
     font: 30px var(--serif);
+    text-align: center;
   }
 
   .manifesto {
@@ -910,23 +868,6 @@ const principles = [
       gap: 14px;
       margin-top: 0;
     }
-    .seating {
-      --seat-offset: -35px;
-      gap: 30px;
-      height: 112px;
-      padding-top: 40px;
-    }
-    .chair {
-      width: 128px;
-      height: 128px;
-    }
-    .seating-bottom {
-      height: 112px;
-      padding-top: 0;
-    }
-    .seating-bottom .chair {
-      margin-top: -20px;
-    }
     .section,
     .manifesto,
     .about,
@@ -935,7 +876,6 @@ const principles = [
       padding: 72px 12px;
     }
     .split,
-    .common-problem,
     .invitation,
     .footer-identity {
       flex-direction: column;
@@ -946,8 +886,43 @@ const principles = [
       flex: none;
       width: 100%;
     }
+    .table-section {
+      gap: 28px;
+      padding: 48px 12px 64px;
+    }
+    .tabletop {
+      flex-direction: row;
+      gap: 20px;
+      padding: 32px 16px;
+      border-radius: 18px;
+      box-shadow: 0 3px 0 #c9beac;
+    }
+    .tabletop > * {
+      flex: 1 1 0;
+      width: auto;
+    }
+    .tabletop .stack {
+      gap: 20px;
+    }
+    .seats {
+      gap: 20px;
+      padding: 0 16px;
+    }
+    .chair {
+      width: 128px;
+      height: 128px;
+    }
     .contribution-heading {
-      font-size: 23px;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+    .contribution-list {
+      font-size: 12px;
+      line-height: 1.8;
+    }
+    .contribution-heading br,
+    .same-side br {
+      display: inline;
     }
     .same-side {
       font-size: 24px;
