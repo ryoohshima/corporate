@@ -1,17 +1,1080 @@
 ---
+import { Image } from "astro:assets";
+import panis from "../assets/panis.jpg";
 
+const nav = [
+  { href: "#approach", label: "Our approach" },
+  { href: "#services", label: "What we do" },
+  { href: "#about", label: "About" },
+];
+const youBring = [
+  "事業への理解",
+  "お客様への理解",
+  "現場で積み重ねた経験",
+  "これから実現したいこと",
+];
+const weBring = [
+  "Design",
+  "Technology",
+  "Web / AIへの知識",
+  "つくり、改善し続ける力",
+];
+const capabilities = [
+  ["Web Design", "伝えたいことが、伝わる設計。"],
+  ["Frontend Development", "使う人に自然な、確かな実装。"],
+  ["CMS / Content Systems", "日々の発信を、自分たちの手で。"],
+  ["SEO / AI Search", "見つけてもらうための、土台づくり。"],
+  ["Maintenance / Improvement", "公開してからも、一緒に育てる。"],
+];
+const steps = [
+  [
+    "Listen",
+    "まず、聴く。",
+    "事業のこと、現場のこと。",
+    "まだ言葉にならない違和感も。",
+  ],
+  [
+    "Align",
+    "目線を、そろえる。",
+    "何を解くのか、どこへ向かうのか。",
+    "共通の目的を見つけます。",
+  ],
+  [
+    "Make",
+    "一緒に、つくる。",
+    "試し、確かめ、対話する。",
+    "小さな判断を重ねてかたちに。",
+  ],
+  [
+    "Grow",
+    "その先も、育てる。",
+    "公開は、次のはじまり。",
+    "使われ方を見ながら改善します。",
+  ],
+];
+const principles = [
+  "対話を大切にする。",
+  "技術的な品質に、妥協しない。",
+  "ひとつひとつの仕事に、誠実に。",
+];
 ---
 
 <html lang="ja">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Panisia</title>
-	</head>
-	<body>
-		<h1>Panisia</h1>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Panisia</title>
+    <meta
+      name="description"
+      content="Panisiaは、依頼する側とつくる側を分けません。あなたの知識と、私たちの技術を同じテーブルに持ち寄り、ひとつの課題を一緒に考えます。"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Inter:wght@400&family=Noto+Sans+JP:wght@400&family=Noto+Serif+JP:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="page">
+      <header class="site-header">
+        <a class="wordmark" href="/">PANISIA</a>
+        <nav class="nav" aria-label="メイン">
+          {nav.map((item) => <a href={item.href}>{item.label}</a>)}
+          <a class="accent" href="#contact">話してみる ↗</a>
+        </nav>
+        <details class="menu">
+          <summary aria-label="メニュー">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </summary>
+          <nav aria-label="メイン（モバイル）">
+            {nav.map((item) => <a href={item.href}>{item.label}</a>)}
+            <a class="accent" href="#contact">話してみる ↗</a>
+          </nav>
+        </details>
+      </header>
+
+      <main>
+        <section class="hero">
+          <p class="label">SAME TABLE. SHARED PROBLEM.</p>
+          <h1>同じテーブルで、<br />考える。</h1>
+          <p class="intro">
+            Panisiaは、依頼する側とつくる側を分けません。<br />あなたの知識と、私たちの技術を同じテーブルに<br />持ち寄り、ひとつの課題を一緒に考えます。
+          </p>
+          <canvas class="hero-visual" aria-hidden="true"></canvas>
+          <div class="hero-baseline">
+            <p class="label">PANISIA / DESIGN &amp; TECHNOLOGY</p>
+            <a class="label" href="#approach">EXPLORE OUR APPROACH ↓</a>
+          </div>
+        </section>
+
+        <div class="seating" aria-hidden="true">
+          {
+            [0, 1].map(() => (
+              <svg class="chair" viewBox="0 0 220 220">
+                <rect x="55.825" y="68.148" width="108.35" height="109.345" />
+                <path d="M55.825 47.663V34.32h108.35v13.343" />
+              </svg>
+            ))
+          }
+        </div>
+
+        <div class="table">
+          <section id="approach" class="section">
+            <p class="label">01 / THE TABLE</p>
+            <div class="split">
+              <div class="stack">
+                <h2 class="contribution-heading">あなたが持ってくるもの</h2>
+                <ul class="contribution-list">
+                  {youBring.map((item) => <li>{item}</li>)}
+                </ul>
+              </div>
+              <div class="stack">
+                <h2 class="contribution-heading">Panisiaが持ってくるもの</h2>
+                <ul class="contribution-list">
+                  {weBring.map((item) => <li>{item}</li>)}
+                </ul>
+              </div>
+            </div>
+            <hr />
+            <div class="common-problem">
+              <p class="same-side">違う知識を、同じ課題のために。</p>
+              <p class="label">YOU + PANISIA → A SHARED PROBLEM</p>
+            </div>
+          </section>
+
+          <section class="section tint manifesto">
+            <p class="label">02 / OUR MANIFESTO</p>
+            <h2 class="statement">良いものは、<br />片側だけではつくれない。</h2>
+            <div class="split bottom">
+              <p class="echo">Not across from you.<br />Alongside you.</p>
+              <p class="body-lg">
+                私たちは、答えを持って訪れる専門家ではなく、<br />同じ側から課題を見る技術者でありたいと考えています。<br />Web制作は、目的ではなく、そのための手段です。
+              </p>
+            </div>
+          </section>
+
+          <section class="section">
+            <div class="split center">
+              <Image
+                class="photo"
+                src={panis}
+                alt="リネンの上で二つに割られた丸いパン"
+                widths={[480, 720, 1200]}
+                sizes="(max-width: 800px) 100vw, 600px"
+                format="webp"
+              />
+              <div class="stack">
+                <p class="label">03 / OUR NAME</p>
+                <h2 class="panis">Panis.</h2>
+                <p class="origin-heading">分かち合うことから、はじまる。</p>
+                <p class="body">
+                  Panisは、ラテン語で「パン」。<br />パンを分け合うように、知識や経験、技術を<br />同じ場所に持ち寄る。<br />Panisiaという名前には、<br />そんな仕事のあり方を込めています。
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section id="services" class="section services">
+            <div class="split">
+              <div class="stack tight">
+                <p class="label">04 / WHAT WE MAKE TOGETHER</p>
+                <h2 class="heading-lg">一緒に考え、<br />かたちにする。</h2>
+              </div>
+              <p class="body-lg">
+                課題に合わせて、必要なものを。<br />設計から開発、公開後の改善まで、<br />ひとつながりのものづくりを支えます。
+              </p>
+            </div>
+            <ol class="capabilities">
+              {
+                capabilities.map(([name, description], i) => (
+                  <li>
+                    <span class="label">{String(i + 1).padStart(2, "0")}</span>
+                    <span class="capability">{name}</span>
+                    <span class="capability-description">{description}</span>
+                  </li>
+                ))
+              }
+            </ol>
+          </section>
+
+          <section class="section tint">
+            <p class="label">05 / SELECTED WORK</p>
+            <div class="split">
+              <h2 class="work-heading">一緒につくったもの。<br />その背景にあること。</h2>
+              <div class="stack tight">
+                <p class="status">事例は、ただいま掲載準備中です。</p>
+                <p class="body-sm">
+                  完成したものだけでなく、出発点となった課題、<br />お互いが持ち寄った知識、そこから得た学びまで。<br />私たちの仕事の過程をお伝えしていきます。
+                </p>
+              </div>
+            </div>
+            <hr />
+            <div class="split">
+              <div class="stack attribution">
+                <p class="label">WHAT THEY BROUGHT</p>
+                <p class="attribution-title">お客様の知識と経験</p>
+              </div>
+              <div class="stack attribution">
+                <p class="label">WHAT PANISIA BROUGHT</p>
+                <p class="attribution-title">私たちの設計と技術</p>
+              </div>
+            </div>
+          </section>
+
+          <section class="section">
+            <p class="label">06 / HOW WE WORK</p>
+            <div class="process-heading">
+              <h2 class="heading-md">同じ側で、進めていく。</h2>
+              <svg class="notebook" viewBox="0 0 180 160" aria-hidden="true">
+                <path d="M110.44 36.68H54.7v86.38h55.74z" />
+                <path d="M58.46 36.68v86.38" />
+                <path d="M125.3 40.74h-3.78v73.52l1.86 8.74 1.92-8.74z" />
+                <path d="M121.52 43.42h3.78" />
+              </svg>
+            </div>
+            <ol class="process">
+              {
+                steps.map(([verb, title, line1, line2], i) => (
+                  <li>
+                    <span class="label">{String(i + 1).padStart(2, "0")}</span>
+                    <span class="verb">{verb}</span>
+                    <span class="process-title">{title}</span>
+                    <span class="body-sm">
+                      {line1}
+                      <br />
+                      {line2}
+                    </span>
+                  </li>
+                ))
+              }
+            </ol>
+          </section>
+
+          <section id="about" class="section about">
+            <hr />
+            <div class="split">
+              <div class="stack">
+                <p class="label">07 / ABOUT PANISIA</p>
+                <h2 class="heading-md">人に近く。<br />技術には、誠実に。</h2>
+              </div>
+              <div class="stack">
+                <p class="about-description">
+                  事業をいちばんよく知る人と、<br />技術で可能性を広げる人。<br />その両方が揃って、できることがある。
+                </p>
+                <ul class="principles">
+                  {
+                    principles.map((text) => (
+                      <li>
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                          <circle cx="10.9" cy="11.6" r="5.3" />
+                          <path d="M16.14 10.26h.82a1.39 1.38 0 0 1 0 2.76h-.82" />
+                        </svg>
+                        {text}
+                      </li>
+                    ))
+                  }
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <section id="contact" class="section tint contact">
+            <p class="label">08 / AN INVITATION</p>
+            <h2 class="contact-heading">同じテーブルで、<br />話しましょう。</h2>
+            <div class="invitation">
+              <p class="body-lg">
+                まだ、まとまっていなくても大丈夫です。<br />いま考えていることから、聞かせてください。
+              </p>
+              <!-- TODO: 問い合わせ先（フォーム URL またはメールアドレス）が決まり次第 href を設定する -->
+              <a class="talk" href="#contact">
+                話してみる
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M7 17 17 7M7 7h10v10" />
+                </svg>
+              </a>
+            </div>
+          </section>
+        </div>
+
+        <div class="seating seating-bottom" aria-hidden="true">
+          {
+            [0, 1].map(() => (
+              <svg class="chair" viewBox="0 0 220 220">
+                <rect x="55.825" y="68.148" width="108.35" height="109.345" />
+                <path d="M55.825 47.663V34.32h108.35v13.343" />
+              </svg>
+            ))
+          }
+        </div>
+      </main>
+
+      <footer class="site-footer">
+        <hr />
+        <div class="footer-identity">
+          <p class="footer-wordmark">PANISIA</p>
+          <p class="footer-promise">Same table. Shared problem.</p>
+        </div>
+        <div class="footer-legal">
+          <small>© Panisia</small>
+          <!-- TODO: プライバシーポリシーページ作成後にリンク化する -->
+          <span>Privacy policy ↗</span>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      // 天板の縁が画面下88%に来てから、画面高35%のスクロールで椅子を60px引き出す
+      const seating = document.querySelector<HTMLElement>(".seating");
+      const root = document.documentElement;
+      const desktop = matchMedia("(min-width: 801px)");
+      const reduced = matchMedia("(prefers-reduced-motion: reduce)");
+      let frame = 0;
+
+      function update() {
+        frame = 0;
+        if (!seating || !desktop.matches || reduced.matches) {
+          root.style.removeProperty("--seat-offset");
+          return;
+        }
+        // 動く椅子ではなく静止した天板の縁を読むので、引き出し自体が進捗に影響しない
+        const edge = seating.getBoundingClientRect().bottom;
+        const trigger = Math.min(innerHeight * 0.88, edge + scrollY);
+        const progress = Math.max(
+          0,
+          Math.min(1, (trigger - edge) / (innerHeight * 0.35)),
+        );
+        const eased = progress * progress * (3 - 2 * progress);
+        root.style.setProperty("--seat-offset", `${-60 * eased}px`);
+      }
+      function schedule() {
+        if (!frame && !document.hidden) frame = requestAnimationFrame(update);
+      }
+
+      addEventListener("scroll", schedule, { passive: true });
+      addEventListener("resize", schedule, { passive: true });
+      desktop.addEventListener("change", schedule);
+      reduced.addEventListener("change", schedule);
+      document.addEventListener("visibilitychange", schedule);
+      update();
+
+      // モバイルメニュー: リンク選択・Esc で閉じる
+      const menu = document.querySelector<HTMLDetailsElement>(".menu");
+      menu?.addEventListener("click", (event) => {
+        if ((event.target as Element).closest("a")) menu.open = false;
+      });
+      document.addEventListener("keydown", (event) => {
+        if (menu?.open && event.key === "Escape") {
+          menu.open = false;
+          menu.querySelector("summary")?.focus();
+        }
+      });
+    </script>
+    <script>
+      import {
+        IcosahedronGeometry,
+        Mesh,
+        MeshBasicMaterial,
+        PerspectiveCamera,
+        Scene,
+        WebGLRenderer,
+      } from "three";
+
+      const canvas = document.querySelector<HTMLCanvasElement>(".hero-visual");
+      if (canvas) {
+        try {
+          const renderer = new WebGLRenderer({ canvas, alpha: true, antialias: true });
+          renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+
+          const scene = new Scene();
+          const camera = new PerspectiveCamera(45, 1, 0.1, 100);
+          camera.position.z = 6;
+          const shape = new Mesh(
+            new IcosahedronGeometry(1.65, 1),
+            new MeshBasicMaterial({ color: 0xa95538, wireframe: true }),
+          );
+          scene.add(shape);
+
+          new ResizeObserver(() => {
+            const size = canvas.clientWidth;
+            camera.aspect = canvas.clientWidth / canvas.clientHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize(size, canvas.clientHeight, false);
+            renderer.render(scene, camera);
+          }).observe(canvas);
+
+          const reduced = matchMedia("(prefers-reduced-motion: reduce)");
+          function updateMotion() {
+            if (reduced.matches || document.hidden) {
+              renderer.setAnimationLoop(null);
+              if (!document.hidden) renderer.render(scene, camera);
+            } else {
+              renderer.setAnimationLoop((time) => {
+                shape.rotation.x = time * 0.00015;
+                shape.rotation.y = time * 0.00025;
+                renderer.render(scene, camera);
+              });
+            }
+          }
+          reduced.addEventListener("change", updateMotion);
+          document.addEventListener("visibilitychange", updateMotion);
+          updateMotion();
+        } catch {
+          canvas.remove();
+        }
+      }
+    </script>
+  </body>
 </html>
+
+<style is:global>
+  :root {
+    --bg: #f3efe6;
+    --bg-tint: #faf8f3;
+    --ink: #211f1b;
+    --muted: #6f6a61;
+    --line: #cec7bb;
+    --accent: #a95538;
+    --serif: "Noto Serif JP", serif;
+    --sans: "Noto Sans JP", sans-serif;
+    --latin: "Instrument Serif", serif;
+    --ui: Inter, system-ui, sans-serif;
+    --seat-offset: -60px;
+  }
+  *,
+  ::before,
+  ::after {
+    box-sizing: border-box;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--sans);
+  }
+  h1,
+  h2,
+  p,
+  ul,
+  ol {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+  }
+  ul,
+  ol {
+    list-style: none;
+  }
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
+  :focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+  }
+  hr {
+    width: 100%;
+    margin: 0;
+    border: 0;
+    border-top: 1px solid var(--line);
+  }
+  svg path,
+  svg rect,
+  svg circle {
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1;
+    vector-effect: non-scaling-stroke;
+  }
+
+  .page {
+    max-width: 1440px;
+    margin-inline: auto;
+    padding: 0 32px;
+    overflow-x: clip;
+  }
+  .label {
+    color: var(--muted);
+    font: 12px var(--ui);
+    letter-spacing: 1.6px;
+  }
+
+  /* Header */
+  .site-header {
+    position: relative;
+    z-index: 20;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 28px 48px;
+  }
+  .wordmark {
+    position: relative;
+    z-index: 3;
+    font: 25px var(--latin);
+    letter-spacing: 4px;
+  }
+  .nav {
+    display: flex;
+    align-items: center;
+    gap: 36px;
+    font: 13px var(--ui);
+  }
+  .accent {
+    color: var(--accent);
+    font: 14px var(--sans);
+  }
+  .menu {
+    display: none;
+    position: relative;
+  }
+  .menu summary {
+    display: grid;
+    place-items: center;
+    width: 44px;
+    height: 44px;
+    list-style: none;
+    cursor: pointer;
+  }
+  .menu summary::-webkit-details-marker {
+    display: none;
+  }
+  /* ヘッダー内の重なり順: 背景(1) < パネル(2) < ロゴ・アイコン(3) */
+  .menu summary svg {
+    position: relative;
+    z-index: 3;
+    width: 24px;
+    height: 24px;
+  }
+  /* 開いている間は summary の疑似要素を全画面の背景にし、タップで閉じられるようにする */
+  .menu[open] summary::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: 1;
+    background: rgb(33 31 27 / 0.45);
+    cursor: default;
+  }
+
+  .menu nav {
+    position: fixed;
+    top: 0;
+    inset-inline: 0;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 92px 24px 24px;
+    background: var(--bg-tint);
+    border-bottom: 1px solid var(--line);
+    font: 18px var(--ui);
+  }
+  .menu nav a {
+    padding: 16px 0;
+    border-top: 1px solid var(--line);
+  }
+
+  /* Hero */
+  .hero {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    padding: 80px 48px 24px;
+    background: var(--bg);
+  }
+  h1 {
+    font: 500 67px/90px var(--serif);
+    letter-spacing: -2px;
+  }
+  .intro {
+    font-size: 17px;
+    line-height: 32px;
+  }
+  .hero-visual {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    width: min(42%, 430px);
+    aspect-ratio: 1;
+    pointer-events: none;
+  }
+  .hero-baseline {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    margin-top: -12px;
+  }
+
+  @media (max-width: 1100px) {
+    .hero-visual {
+      position: static;
+      align-self: center;
+      width: min(100%, 360px);
+    }
+  }
+
+  /* Chairs: 天板（.table）が後から描画され、座面の下半分を隠す */
+  .seating {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    gap: 68px;
+    height: 180px;
+    padding-top: 57px;
+  }
+  .chair {
+    flex-shrink: 0;
+    color: var(--line);
+    width: 220px;
+    height: 220px;
+    transform: translateY(var(--seat-offset));
+  }
+
+  /* 天板の下端：テーブル側を向いた椅子。上端で切り、座面を天板の下に隠す */
+  .seating-bottom {
+    z-index: 6;
+    height: 120px;
+    padding-top: 0;
+    overflow: hidden;
+  }
+  .seating-bottom .chair {
+    margin-top: -97px;
+    transform: rotate(180deg);
+  }
+
+  /* Table */
+  .table {
+    position: relative;
+    z-index: 5;
+    background: var(--bg);
+    outline: 1px solid var(--line);
+    outline-offset: -0.5px;
+  }
+  .section {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    padding: 100px 48px;
+    background: var(--bg);
+    scroll-margin-top: 24px;
+  }
+  .tint {
+    background: var(--bg-tint);
+  }
+  .split {
+    display: flex;
+    gap: 80px;
+  }
+  .split > * {
+    flex: 1 1 0;
+    min-width: 0;
+  }
+  .split.center {
+    align-items: center;
+  }
+  .split.bottom {
+    align-items: flex-end;
+  }
+  .stack {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
+  .stack.tight {
+    gap: 24px;
+  }
+  .body {
+    font-size: 17px;
+    line-height: 32px;
+  }
+  .body-lg {
+    font-size: 18px;
+    line-height: 34px;
+  }
+  .body-sm {
+    font-size: 16px;
+    line-height: 30px;
+  }
+  .heading-lg {
+    font: 48px/67px var(--serif);
+  }
+  .heading-md {
+    font: 46px/64px var(--serif);
+  }
+
+  .contribution-heading {
+    font: 27px var(--serif);
+  }
+  .contribution-list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    font-size: 18px;
+    line-height: 29px;
+  }
+  .common-problem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+  }
+  .same-side {
+    font: 30px var(--serif);
+  }
+
+  .manifesto {
+    padding-block: 112px;
+  }
+  .statement {
+    font: 500 58px/81px var(--serif);
+  }
+  .echo {
+    color: var(--muted);
+    font: 38px/44px var(--latin);
+  }
+
+  .photo {
+    display: block;
+    width: 100%;
+    height: 440px;
+    object-fit: cover;
+  }
+  .panis {
+    font: 84px/88px var(--latin);
+  }
+  .origin-heading {
+    font: 28px var(--serif);
+  }
+
+  .services {
+    padding-top: 60px;
+  }
+  .capabilities {
+    border-top: 1px solid var(--line);
+  }
+  .capabilities li {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 26px 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .capability {
+    flex: 1 1 0;
+    font: 31px var(--latin);
+  }
+  .capability-description {
+    flex: 0 1 480px;
+    font-size: 16px;
+  }
+
+  .work-heading {
+    font: 43px/62px var(--serif);
+  }
+  .status {
+    font: 20px var(--serif);
+  }
+  .attribution {
+    gap: 16px;
+  }
+  .attribution-title {
+    font: 24px var(--serif);
+  }
+
+  .process-heading {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+  .process-heading h2 {
+    flex: 1 1 0;
+    line-height: normal;
+  }
+  .notebook {
+    flex-shrink: 0;
+    color: var(--line);
+    width: 180px;
+    height: 160px;
+  }
+  .process {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 24px 0;
+    border-block: 1px solid var(--line);
+  }
+  .process li {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    padding: 8px 24px;
+  }
+  .process li + li {
+    border-left: 1px solid var(--line);
+  }
+  .verb {
+    font: 43px var(--latin);
+  }
+  .process-title {
+    font: 20px var(--serif);
+  }
+
+  .about {
+    padding: 80px 48px 120px;
+  }
+  .about-description {
+    font: 23px/41px var(--serif);
+  }
+  .principles {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .principles li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .principles svg {
+    flex-shrink: 0;
+    color: var(--line);
+    width: 24px;
+    height: 24px;
+  }
+
+  .contact {
+    gap: 38px;
+    padding-bottom: 96px;
+  }
+  .contact-heading {
+    font: 65px/91px var(--serif);
+  }
+  .invitation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+  }
+  .talk {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    flex-shrink: 0;
+    padding: 18px 0;
+    border-bottom: 1px solid var(--accent);
+    color: var(--accent);
+    font: 25px var(--serif);
+  }
+  .talk svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  /* Footer */
+  .site-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    padding: 40px 48px;
+  }
+  .footer-identity,
+  .footer-legal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .footer-wordmark {
+    font: 40px var(--latin);
+    letter-spacing: 5px;
+  }
+  .footer-promise {
+    color: var(--muted);
+    font: 19px var(--latin);
+  }
+  .footer-legal {
+    color: var(--muted);
+    font: 12px var(--ui);
+  }
+  .footer-legal small {
+    font-size: inherit;
+  }
+
+  @media (max-width: 800px) {
+    .page {
+      padding: 0 12px;
+    }
+    br {
+      display: none;
+    }
+    .site-header {
+      padding: 24px 12px;
+    }
+    .wordmark {
+      font-size: 24px;
+    }
+    .nav {
+      display: none;
+    }
+    .menu {
+      display: block;
+    }
+    .hero {
+      gap: 32px;
+      padding: 40px 12px 24px;
+    }
+    h1 {
+      font-size: 38px;
+      line-height: 51px;
+      letter-spacing: -1px;
+    }
+    h1 br {
+      display: inline;
+    }
+    .intro {
+      font-size: 16px;
+      line-height: 30px;
+    }
+    .hero-baseline {
+      flex-direction: column;
+      gap: 14px;
+      margin-top: 0;
+    }
+    .seating {
+      --seat-offset: -35px;
+      gap: 30px;
+      height: 112px;
+      padding-top: 40px;
+    }
+    .chair {
+      width: 128px;
+      height: 128px;
+    }
+    .seating-bottom {
+      height: 112px;
+      padding-top: 0;
+    }
+    .seating-bottom .chair {
+      margin-top: -20px;
+    }
+    .section,
+    .manifesto,
+    .about,
+    .contact {
+      gap: 32px;
+      padding: 72px 12px;
+    }
+    .split,
+    .common-problem,
+    .invitation,
+    .footer-identity {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 32px;
+    }
+    .split > * {
+      flex: none;
+      width: 100%;
+    }
+    .contribution-heading {
+      font-size: 23px;
+    }
+    .same-side {
+      font-size: 24px;
+    }
+    .statement,
+    .heading-lg,
+    .heading-md,
+    .contact-heading {
+      font-size: 34px;
+      line-height: 48px;
+    }
+    .statement br,
+    .heading-lg br,
+    .heading-md br,
+    .contact-heading br,
+    .work-heading br,
+    .echo br {
+      display: inline;
+    }
+    .echo {
+      font-size: 24px;
+      line-height: 28px;
+    }
+    .photo {
+      height: 320px;
+    }
+    .panis {
+      font-size: 70px;
+      line-height: 74px;
+    }
+    .origin-heading {
+      font-size: 24px;
+    }
+    .capabilities li {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 24px 0;
+    }
+    .capability {
+      font-size: 24px;
+    }
+    .capability-description {
+      flex: none;
+    }
+    .work-heading {
+      font-size: 34px;
+      line-height: 49px;
+    }
+    .notebook {
+      display: none;
+    }
+    .process {
+      grid-template-columns: 1fr;
+      padding: 0;
+      border-bottom: 0;
+    }
+    .process li {
+      padding: 28px 20px;
+      border-bottom: 1px solid var(--line);
+    }
+    .process li + li {
+      border-left: 0;
+    }
+    .verb {
+      font-size: 34px;
+    }
+    .talk {
+      gap: 44px;
+      font-size: 24px;
+    }
+    .site-footer {
+      gap: 32px;
+      padding: 32px 12px;
+    }
+    .footer-wordmark {
+      font-size: 34px;
+    }
+  }
+</style>
