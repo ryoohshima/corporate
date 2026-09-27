@@ -18,6 +18,20 @@
       "preset": "recommended"
     }
   },
+  // Astro のフロントマター変数はテンプレート側の使用を Biome が検出できない
+  "overrides": [
+    {
+      "includes": ["**/*.astro"],
+      "linter": {
+        "rules": {
+          "correctness": {
+            "noUnusedVariables": "off",
+            "noUnusedImports": "off"
+          }
+        }
+      }
+    }
+  ],
   "assist": {
     "actions": {
       "source": {
