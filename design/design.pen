@@ -33,7 +33,7 @@
               "id": "J9QqY",
               "name": "Panisia wordmark",
               "fill": "$ink",
-              "content": "PANISIA",
+              "content": "Panisia",
               "fontFamily": "Instrument Serif",
               "fontSize": 25,
               "fontWeight": "normal",
@@ -82,7 +82,7 @@
                   "name": "Contact link",
                   "fill": "$accent",
                   "content": "話してみる ↗",
-                  "fontFamily": "Noto Sans JP",
+                  "fontFamily": "Noto Serif JP",
                   "fontSize": 14,
                   "fontWeight": "normal"
                 }
@@ -155,7 +155,7 @@
                       "width": "fill_container",
                       "content": "Panisiaは、依頼する側とつくる側を分けません。\nあなたの知識と、私たちの技術を同じテーブルに\n持ち寄り、ひとつの課題を一緒に考えます。",
                       "lineHeight": 1.9,
-                      "fontFamily": "Noto Sans JP",
+                      "fontFamily": "Noto Serif JP",
                       "fontSize": 17,
                       "fontWeight": "normal"
                     }
@@ -637,7 +637,7 @@
                   "id": "L9LCAf",
                   "name": "Brand descriptor",
                   "fill": "$muted",
-                  "content": "PANISIA / DESIGN & TECHNOLOGY",
+                  "content": "Panisia / DESIGN & TECHNOLOGY",
                   "fontFamily": "Inter",
                   "fontSize": 12,
                   "fontWeight": "normal",
@@ -1101,7 +1101,7 @@
                                   "fill": "$ink",
                                   "content": "事業への理解",
                                   "lineHeight": 1.6,
-                                  "fontFamily": "Noto Sans JP",
+                                  "fontFamily": "Noto Serif JP",
                                   "fontSize": 18,
                                   "fontWeight": "normal"
                                 },
@@ -1112,7 +1112,7 @@
                                   "fill": "$ink",
                                   "content": "お客様への理解",
                                   "lineHeight": 1.6,
-                                  "fontFamily": "Noto Sans JP",
+                                  "fontFamily": "Noto Serif JP",
                                   "fontSize": 18,
                                   "fontWeight": "normal"
                                 },
@@ -1123,7 +1123,7 @@
                                   "fill": "$ink",
                                   "content": "現場で積み重ねた経験",
                                   "lineHeight": 1.6,
-                                  "fontFamily": "Noto Sans JP",
+                                  "fontFamily": "Noto Serif JP",
                                   "fontSize": 18,
                                   "fontWeight": "normal"
                                 },
@@ -1134,7 +1134,7 @@
                                   "fill": "$ink",
                                   "content": "これから実現したいこと",
                                   "lineHeight": 1.6,
-                                  "fontFamily": "Noto Sans JP",
+                                  "fontFamily": "Noto Serif JP",
                                   "fontSize": 18,
                                   "fontWeight": "normal"
                                 }
@@ -1189,7 +1189,7 @@
                                   "fill": "$ink",
                                   "content": "Design",
                                   "lineHeight": 1.6,
-                                  "fontFamily": "Noto Sans JP",
+                                  "fontFamily": "Noto Serif JP",
                                   "fontSize": 18,
                                   "fontWeight": "normal"
                                 },
@@ -1200,7 +1200,7 @@
                                   "fill": "$ink",
                                   "content": "Technology",
                                   "lineHeight": 1.6,
-                                  "fontFamily": "Noto Sans JP",
+                                  "fontFamily": "Noto Serif JP",
                                   "fontSize": 18,
                                   "fontWeight": "normal"
                                 },
@@ -1211,7 +1211,7 @@
                                   "fill": "$ink",
                                   "content": "Web / AIへの知識",
                                   "lineHeight": 1.6,
-                                  "fontFamily": "Noto Sans JP",
+                                  "fontFamily": "Noto Serif JP",
                                   "fontSize": 18,
                                   "fontWeight": "normal"
                                 },
@@ -1222,7 +1222,7 @@
                                   "fill": "$ink",
                                   "content": "つくり、改善し続ける力",
                                   "lineHeight": 1.6,
-                                  "fontFamily": "Noto Sans JP",
+                                  "fontFamily": "Noto Serif JP",
                                   "fontSize": 18,
                                   "fontWeight": "normal"
                                 }
@@ -1284,7 +1284,7 @@
                       "id": "DEten",
                       "name": "Shared orientation",
                       "fill": "$muted",
-                      "content": "YOU + PANISIA → A SHARED PROBLEM",
+                      "content": "YOU + Panisia → A SHARED PROBLEM",
                       "fontFamily": "Inter",
                       "fontSize": 12,
                       "fontWeight": "normal",
@@ -1361,7 +1361,7 @@
                       "width": "fill_container",
                       "content": "私たちは、答えを持って訪れる専門家ではなく、\n同じ側から課題を見る技術者でありたいと考えています。\nWeb制作は、目的ではなく、そのための手段です。",
                       "lineHeight": 1.9,
-                      "fontFamily": "Noto Sans JP",
+                      "fontFamily": "Noto Serif JP",
                       "fontSize": 18,
                       "fontWeight": "normal"
                     }
@@ -1453,7 +1453,7 @@
                           "width": "fill_container",
                           "content": "Panisは、ラテン語で「パン」。\nパンを分け合うように、知識や経験、技術を\n同じ場所に持ち寄る。\nPanisiaという名前には、\nそんな仕事のあり方を込めています。",
                           "lineHeight": 1.9,
-                          "fontFamily": "Noto Sans JP",
+                          "fontFamily": "Noto Serif JP",
                           "fontSize": 17,
                           "fontWeight": "normal"
                         }
@@ -1527,7 +1527,7 @@
                       "width": "fill_container",
                       "content": "課題に合わせて、必要なものを。\n設計から開発、公開後の改善まで、\nひとつながりのものづくりを支えます。",
                       "lineHeight": 1.9,
-                      "fontFamily": "Noto Sans JP",
+                      "fontFamily": "Noto Serif JP",
                       "fontSize": 18,
                       "fontWeight": "normal"
                     }
@@ -1591,7 +1591,7 @@
                           "textGrowth": "fixed-width",
                           "width": 480,
                           "content": "伝えたいことが、伝わる設計。",
-                          "fontFamily": "Noto Sans JP",
+                          "fontFamily": "Noto Serif JP",
                           "fontSize": 16,
                           "fontWeight": "normal"
                         }
@@ -1648,7 +1648,7 @@
                           "textGrowth": "fixed-width",
                           "width": 480,
                           "content": "使う人に自然な、確かな実装。",
-                          "fontFamily": "Noto Sans JP",
+                          "fontFamily": "Noto Serif JP",
                           "fontSize": 16,
                           "fontWeight": "normal"
                         }
@@ -1705,7 +1705,7 @@
                           "textGrowth": "fixed-width",
                           "width": 480,
                           "content": "日々の発信を、自分たちの手で。",
-                          "fontFamily": "Noto Sans JP",
+                          "fontFamily": "Noto Serif JP",
                           "fontSize": 16,
                           "fontWeight": "normal"
                         }
@@ -1762,7 +1762,7 @@
                           "textGrowth": "fixed-width",
                           "width": 480,
                           "content": "見つけてもらうための、土台づくり。",
-                          "fontFamily": "Noto Sans JP",
+                          "fontFamily": "Noto Serif JP",
                           "fontSize": 16,
                           "fontWeight": "normal"
                         }
@@ -1819,7 +1819,7 @@
                           "textGrowth": "fixed-width",
                           "width": 480,
                           "content": "公開してからも、一緒に育てる。",
-                          "fontFamily": "Noto Sans JP",
+                          "fontFamily": "Noto Serif JP",
                           "fontSize": 16,
                           "fontWeight": "normal"
                         }
@@ -1908,7 +1908,7 @@
                           "width": "fill_container",
                           "content": "完成したものだけでなく、出発点となった課題、\nお互いが持ち寄った知識、そこから得た学びまで。\n私たちの仕事の過程をお伝えしていきます。",
                           "lineHeight": 1.9,
-                          "fontFamily": "Noto Sans JP",
+                          "fontFamily": "Noto Serif JP",
                           "fontSize": 16,
                           "fontWeight": "normal"
                         }
@@ -1975,7 +1975,7 @@
                           "id": "Lnz1m",
                           "name": "Contribution label",
                           "fill": "$muted",
-                          "content": "WHAT PANISIA BROUGHT",
+                          "content": "WHAT Panisia BROUGHT",
                           "fontFamily": "Inter",
                           "fontSize": 12,
                           "fontWeight": "normal",
@@ -2197,7 +2197,7 @@
                           "width": "fill_container",
                           "content": "事業のこと、現場のこと。\nまだ言葉にならない違和感も。",
                           "lineHeight": 1.85,
-                          "fontFamily": "Noto Sans JP",
+                          "fontFamily": "Noto Serif JP",
                           "fontSize": 16,
                           "fontWeight": "normal"
                         }
@@ -2270,7 +2270,7 @@
                           "width": "fill_container",
                           "content": "何を解くのか、どこへ向かうのか。\n共通の目的を見つけます。",
                           "lineHeight": 1.85,
-                          "fontFamily": "Noto Sans JP",
+                          "fontFamily": "Noto Serif JP",
                           "fontSize": 16,
                           "fontWeight": "normal"
                         }
@@ -2343,7 +2343,7 @@
                           "width": "fill_container",
                           "content": "試し、確かめ、対話する。\n小さな判断を重ねてかたちに。",
                           "lineHeight": 1.85,
-                          "fontFamily": "Noto Sans JP",
+                          "fontFamily": "Noto Serif JP",
                           "fontSize": 16,
                           "fontWeight": "normal"
                         }
@@ -2413,7 +2413,7 @@
                           "width": "fill_container",
                           "content": "公開は、次のはじまり。\n使われ方を見ながら改善します。",
                           "lineHeight": 1.85,
-                          "fontFamily": "Noto Sans JP",
+                          "fontFamily": "Noto Serif JP",
                           "fontSize": 16,
                           "fontWeight": "normal"
                         }
@@ -2466,7 +2466,7 @@
                           "id": "oCh97",
                           "name": "Section label",
                           "fill": "$muted",
-                          "content": "07 / ABOUT PANISIA",
+                          "content": "07 / ABOUT Panisia",
                           "fontFamily": "Inter",
                           "fontSize": 12,
                           "fontWeight": "normal",
@@ -2520,7 +2520,7 @@
                           "width": 600,
                           "content": "Panisiaは、対話を大切にするものづくりのパートナーです。\n人間的な距離感を持ちながら、技術的な品質には妥協しない。\nその姿勢を、ひとつひとつの仕事に。",
                           "lineHeight": 1.9,
-                          "fontFamily": "Noto Sans JP",
+                          "fontFamily": "Noto Serif JP",
                           "fontSize": 16,
                           "fontWeight": "normal"
                         },
@@ -2604,7 +2604,7 @@
                                   "width": "fill_container",
                                   "content": "対話を大切にする。",
                                   "lineHeight": 1.75,
-                                  "fontFamily": "Noto Sans JP",
+                                  "fontFamily": "Noto Serif JP",
                                   "fontSize": 16,
                                   "fontWeight": "normal"
                                 }
@@ -2682,7 +2682,7 @@
                                   "width": "fill_container",
                                   "content": "技術的な品質に、妥協しない。",
                                   "lineHeight": 1.75,
-                                  "fontFamily": "Noto Sans JP",
+                                  "fontFamily": "Noto Serif JP",
                                   "fontSize": 16,
                                   "fontWeight": "normal"
                                 }
@@ -2760,7 +2760,7 @@
                                   "width": "fill_container",
                                   "content": "ひとつひとつの仕事に、誠実に。",
                                   "lineHeight": 1.75,
-                                  "fontFamily": "Noto Sans JP",
+                                  "fontFamily": "Noto Serif JP",
                                   "fontSize": 16,
                                   "fontWeight": "normal"
                                 }
@@ -2831,7 +2831,7 @@
                       "width": "fill_container",
                       "content": "まだ、まとまっていなくても大丈夫です。\nいま考えていることから、聞かせてください。",
                       "lineHeight": 1.9,
-                      "fontFamily": "Noto Sans JP",
+                      "fontFamily": "Noto Serif JP",
                       "fontSize": 18,
                       "fontWeight": "normal"
                     },
@@ -3025,7 +3025,7 @@
                   "id": "G5vci",
                   "name": "Footer wordmark",
                   "fill": "$ink",
-                  "content": "PANISIA",
+                  "content": "Panisia",
                   "fontFamily": "Instrument Serif",
                   "fontSize": 40,
                   "fontWeight": "normal",
@@ -3109,7 +3109,7 @@
               "id": "MtQyd",
               "name": "Panisia wordmark",
               "fill": "$ink",
-              "content": "PANISIA",
+              "content": "Panisia",
               "fontFamily": "Instrument Serif",
               "fontSize": 24,
               "fontWeight": "normal",
@@ -3203,7 +3203,7 @@
                       "width": "fill_container",
                       "content": "Panisiaは、依頼する側とつくる側を分けません。あなたの知識と、私たちの技術を同じテーブルに持ち寄り、ひとつの課題を一緒に考えます。",
                       "lineHeight": 1.9,
-                      "fontFamily": "Noto Sans JP",
+                      "fontFamily": "Noto Serif JP",
                       "fontSize": 16,
                       "fontWeight": "normal"
                     }
@@ -3689,7 +3689,7 @@
                   "id": "O7bLIq",
                   "name": "Brand descriptor",
                   "fill": "$muted",
-                  "content": "PANISIA / DESIGN & TECHNOLOGY",
+                  "content": "Panisia / DESIGN & TECHNOLOGY",
                   "fontFamily": "Inter",
                   "fontSize": 12,
                   "fontWeight": "normal",
@@ -4058,7 +4058,7 @@
                                   "width": "fill_container",
                                   "content": "事業への理解",
                                   "lineHeight": 1.8,
-                                  "fontFamily": "Noto Sans JP",
+                                  "fontFamily": "Noto Serif JP",
                                   "fontSize": 12,
                                   "fontWeight": "normal"
                                 },
@@ -4071,7 +4071,7 @@
                                   "width": "fill_container",
                                   "content": "お客様への理解",
                                   "lineHeight": 1.8,
-                                  "fontFamily": "Noto Sans JP",
+                                  "fontFamily": "Noto Serif JP",
                                   "fontSize": 12,
                                   "fontWeight": "normal"
                                 },
@@ -4084,7 +4084,7 @@
                                   "width": "fill_container",
                                   "content": "現場で積み重ねた経験",
                                   "lineHeight": 1.8,
-                                  "fontFamily": "Noto Sans JP",
+                                  "fontFamily": "Noto Serif JP",
                                   "fontSize": 12,
                                   "fontWeight": "normal"
                                 },
@@ -4097,7 +4097,7 @@
                                   "width": "fill_container",
                                   "content": "これから実現したいこと",
                                   "lineHeight": 1.8,
-                                  "fontFamily": "Noto Sans JP",
+                                  "fontFamily": "Noto Serif JP",
                                   "fontSize": 12,
                                   "fontWeight": "normal"
                                 }
@@ -4143,7 +4143,7 @@
                                   "width": "fill_container",
                                   "content": "Design",
                                   "lineHeight": 1.8,
-                                  "fontFamily": "Noto Sans JP",
+                                  "fontFamily": "Noto Serif JP",
                                   "fontSize": 12,
                                   "fontWeight": "normal"
                                 },
@@ -4156,7 +4156,7 @@
                                   "width": "fill_container",
                                   "content": "Technology",
                                   "lineHeight": 1.8,
-                                  "fontFamily": "Noto Sans JP",
+                                  "fontFamily": "Noto Serif JP",
                                   "fontSize": 12,
                                   "fontWeight": "normal"
                                 },
@@ -4169,7 +4169,7 @@
                                   "width": "fill_container",
                                   "content": "Web / AIへの知識",
                                   "lineHeight": 1.8,
-                                  "fontFamily": "Noto Sans JP",
+                                  "fontFamily": "Noto Serif JP",
                                   "fontSize": 12,
                                   "fontWeight": "normal"
                                 },
@@ -4182,7 +4182,7 @@
                                   "width": "fill_container",
                                   "content": "つくり、改善し続ける力",
                                   "lineHeight": 1.8,
-                                  "fontFamily": "Noto Sans JP",
+                                  "fontFamily": "Noto Serif JP",
                                   "fontSize": 12,
                                   "fontWeight": "normal"
                                 }
@@ -4233,7 +4233,7 @@
                       "id": "MaM7X",
                       "name": "Shared orientation",
                       "fill": "$muted",
-                      "content": "YOU + PANISIA → A SHARED PROBLEM",
+                      "content": "YOU + Panisia → A SHARED PROBLEM",
                       "fontFamily": "Inter",
                       "fontSize": 10,
                       "fontWeight": "normal",
@@ -4310,7 +4310,7 @@
                       "width": "fill_container",
                       "content": "私たちは、答えを持って訪れる専門家ではなく、同じ側から課題を見る技術者でありたいと考えています。Web制作は、目的ではなく、そのための手段です。",
                       "lineHeight": 1.9,
-                      "fontFamily": "Noto Sans JP",
+                      "fontFamily": "Noto Serif JP",
                       "fontSize": 18,
                       "fontWeight": "normal"
                     }
@@ -4402,7 +4402,7 @@
                           "width": "fill_container",
                           "content": "Panisは、ラテン語で「パン」。パンを分け合うように、知識や経験、技術を同じ場所に持ち寄る。Panisiaという名前には、そんな仕事のあり方を込めています。",
                           "lineHeight": 1.9,
-                          "fontFamily": "Noto Sans JP",
+                          "fontFamily": "Noto Serif JP",
                           "fontSize": 17,
                           "fontWeight": "normal"
                         }
@@ -4475,7 +4475,7 @@
                       "width": "fill_container",
                       "content": "課題に合わせて、必要なものを。設計から開発、公開後の改善まで、ひとつながりのものづくりを支えます。",
                       "lineHeight": 1.9,
-                      "fontFamily": "Noto Sans JP",
+                      "fontFamily": "Noto Serif JP",
                       "fontSize": 18,
                       "fontWeight": "normal"
                     }
@@ -4539,7 +4539,7 @@
                           "textGrowth": "fixed-width",
                           "width": "fill_container",
                           "content": "伝えたいことが、伝わる設計。",
-                          "fontFamily": "Noto Sans JP",
+                          "fontFamily": "Noto Serif JP",
                           "fontSize": 16,
                           "fontWeight": "normal"
                         }
@@ -4596,7 +4596,7 @@
                           "textGrowth": "fixed-width",
                           "width": "fill_container",
                           "content": "使う人に自然な、確かな実装。",
-                          "fontFamily": "Noto Sans JP",
+                          "fontFamily": "Noto Serif JP",
                           "fontSize": 16,
                           "fontWeight": "normal"
                         }
@@ -4653,7 +4653,7 @@
                           "textGrowth": "fixed-width",
                           "width": "fill_container",
                           "content": "日々の発信を、自分たちの手で。",
-                          "fontFamily": "Noto Sans JP",
+                          "fontFamily": "Noto Serif JP",
                           "fontSize": 16,
                           "fontWeight": "normal"
                         }
@@ -4710,7 +4710,7 @@
                           "textGrowth": "fixed-width",
                           "width": "fill_container",
                           "content": "見つけてもらうための、土台づくり。",
-                          "fontFamily": "Noto Sans JP",
+                          "fontFamily": "Noto Serif JP",
                           "fontSize": 16,
                           "fontWeight": "normal"
                         }
@@ -4767,7 +4767,7 @@
                           "textGrowth": "fixed-width",
                           "width": "fill_container",
                           "content": "公開してからも、一緒に育てる。",
-                          "fontFamily": "Noto Sans JP",
+                          "fontFamily": "Noto Serif JP",
                           "fontSize": 16,
                           "fontWeight": "normal"
                         }
@@ -4859,7 +4859,7 @@
                           "width": "fill_container",
                           "content": "完成したものだけでなく、出発点となった課題、お互いが持ち寄った知識、そこから得た学びまで。私たちの仕事の過程をお伝えしていきます。",
                           "lineHeight": 1.9,
-                          "fontFamily": "Noto Sans JP",
+                          "fontFamily": "Noto Serif JP",
                           "fontSize": 16,
                           "fontWeight": "normal"
                         }
@@ -4927,7 +4927,7 @@
                           "id": "I412JN",
                           "name": "Contribution label",
                           "fill": "$muted",
-                          "content": "WHAT PANISIA BROUGHT",
+                          "content": "WHAT Panisia BROUGHT",
                           "fontFamily": "Inter",
                           "fontSize": 12,
                           "fontWeight": "normal",
@@ -5062,7 +5062,7 @@
                           "width": "fill_container",
                           "content": "事業のこと、現場のこと。まだ言葉にならない違和感も。",
                           "lineHeight": 1.85,
-                          "fontFamily": "Noto Sans JP",
+                          "fontFamily": "Noto Serif JP",
                           "fontSize": 16,
                           "fontWeight": "normal"
                         }
@@ -5135,7 +5135,7 @@
                           "width": "fill_container",
                           "content": "何を解くのか、どこへ向かうのか。共通の目的を見つけます。",
                           "lineHeight": 1.85,
-                          "fontFamily": "Noto Sans JP",
+                          "fontFamily": "Noto Serif JP",
                           "fontSize": 16,
                           "fontWeight": "normal"
                         }
@@ -5208,7 +5208,7 @@
                           "width": "fill_container",
                           "content": "試し、確かめ、対話する。小さな判断を重ねてかたちに。",
                           "lineHeight": 1.85,
-                          "fontFamily": "Noto Sans JP",
+                          "fontFamily": "Noto Serif JP",
                           "fontSize": 16,
                           "fontWeight": "normal"
                         }
@@ -5278,7 +5278,7 @@
                           "width": "fill_container",
                           "content": "公開は、次のはじまり。使われ方を見ながら改善します。",
                           "lineHeight": 1.85,
-                          "fontFamily": "Noto Sans JP",
+                          "fontFamily": "Noto Serif JP",
                           "fontSize": 16,
                           "fontWeight": "normal"
                         }
@@ -5329,7 +5329,7 @@
                           "id": "zm9sv",
                           "name": "Section label",
                           "fill": "$muted",
-                          "content": "07 / ABOUT PANISIA",
+                          "content": "07 / ABOUT Panisia",
                           "fontFamily": "Inter",
                           "fontSize": 12,
                           "fontWeight": "normal",
@@ -5383,7 +5383,7 @@
                           "width": 342,
                           "content": "Panisiaは、対話を大切にするものづくりのパートナーです。人間的な距離感を持ちながら、技術的な品質には妥協しない。その姿勢を、ひとつひとつの仕事に。",
                           "lineHeight": 1.9,
-                          "fontFamily": "Noto Sans JP",
+                          "fontFamily": "Noto Serif JP",
                           "fontSize": 16,
                           "fontWeight": "normal"
                         },
@@ -5467,7 +5467,7 @@
                                   "width": "fill_container",
                                   "content": "対話を大切にする。",
                                   "lineHeight": 1.75,
-                                  "fontFamily": "Noto Sans JP",
+                                  "fontFamily": "Noto Serif JP",
                                   "fontSize": 16,
                                   "fontWeight": "normal"
                                 }
@@ -5545,7 +5545,7 @@
                                   "width": "fill_container",
                                   "content": "技術的な品質に、妥協しない。",
                                   "lineHeight": 1.75,
-                                  "fontFamily": "Noto Sans JP",
+                                  "fontFamily": "Noto Serif JP",
                                   "fontSize": 16,
                                   "fontWeight": "normal"
                                 }
@@ -5623,7 +5623,7 @@
                                   "width": "fill_container",
                                   "content": "ひとつひとつの仕事に、誠実に。",
                                   "lineHeight": 1.75,
-                                  "fontFamily": "Noto Sans JP",
+                                  "fontFamily": "Noto Serif JP",
                                   "fontSize": 16,
                                   "fontWeight": "normal"
                                 }
@@ -5692,7 +5692,7 @@
                       "width": "fill_container",
                       "content": "まだ、まとまっていなくても大丈夫です。いま考えていることから、聞かせてください。",
                       "lineHeight": 1.9,
-                      "fontFamily": "Noto Sans JP",
+                      "fontFamily": "Noto Serif JP",
                       "fontSize": 18,
                       "fontWeight": "normal"
                     },
@@ -5887,7 +5887,7 @@
                   "id": "eqS0M",
                   "name": "Footer wordmark",
                   "fill": "$ink",
-                  "content": "PANISIA",
+                  "content": "Panisia",
                   "fontFamily": "Instrument Serif",
                   "fontSize": 34,
                   "fontWeight": "normal",
