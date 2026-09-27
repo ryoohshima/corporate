@@ -140,8 +140,8 @@ const principles = [
                   [0, 1].map(() => (
                     <div>
                       <svg class="chair" viewBox="0 0 220 220">
-                        <rect x="55.825" y="68.148" width="108.35" height="109.345" rx="8" />
-                        <path d="M65.325 42h89.35a9.5 9.5 0 0 1 9.5 9.5V57a4 4 0 0 1-4 4H59.825a4 4 0 0 1-4-4v-5.5a9.5 9.5 0 0 1 9.5-9.5z" />
+                        <rect x="55.825" y="68.148" width="108.35" height="109.345" />
+                        <path d="M55.825 47.663V34.32h108.35v13.343" />
                       </svg>
                     </div>
                   ))
@@ -323,6 +323,41 @@ const principles = [
     </div>
 
     <script>
+      // 天板の下端が画面下88%に来てから、画面高35%のスクロールで椅子を天板の下から引き出す
+      const tabletop = document.querySelector<HTMLElement>(".tabletop");
+      const root = document.documentElement;
+      const desktop = matchMedia("(min-width: 801px)");
+      const reduced = matchMedia("(prefers-reduced-motion: reduce)");
+      let frame = 0;
+
+      function update() {
+        frame = 0;
+        if (!tabletop || !desktop.matches || reduced.matches) {
+          root.style.removeProperty("--seat-offset");
+          return;
+        }
+        // 動く椅子ではなく静止した天板の縁を読むので、引き出し自体が進捗に影響しない
+        const edge = tabletop.getBoundingClientRect().bottom;
+        const trigger = Math.min(innerHeight * 0.88, edge + scrollY);
+        const progress = Math.max(
+          0,
+          Math.min(1, (trigger - edge) / (innerHeight * 0.35)),
+        );
+        const eased = progress * progress * (3 - 2 * progress);
+        // 初期位置は座面の約半分が天板に隠れる 97px 上
+        root.style.setProperty("--seat-offset", `${-97 * (1 - eased)}px`);
+      }
+      function schedule() {
+        if (!frame && !document.hidden) frame = requestAnimationFrame(update);
+      }
+
+      addEventListener("scroll", schedule, { passive: true });
+      addEventListener("resize", schedule, { passive: true });
+      desktop.addEventListener("change", schedule);
+      reduced.addEventListener("change", schedule);
+      document.addEventListener("visibilitychange", schedule);
+      update();
+
       // モバイルメニュー: リンク選択・Esc で閉じる
       const menu = document.querySelector<HTMLDetailsElement>(".menu");
       menu?.addEventListener("click", (event) => {
@@ -591,11 +626,14 @@ const principles = [
     gap: 40px;
     padding: 72px 48px 96px;
   }
+  /* 椅子が天板の下へ潜り込むよう、天板を上に重ねる */
   .tabletop {
+    position: relative;
+    z-index: 1;
+    background: var(--bg);
     padding: 64px 72px;
-    border-radius: 28px;
-    background: #e6dfd2;
-    box-shadow: 0 4px 0 #c9beac;
+    outline: 1px solid var(--line);
+    outline-offset: -0.5px;
   }
   .seats {
     display: flex;
@@ -610,18 +648,13 @@ const principles = [
   .chair {
     width: 220px;
     height: 220px;
-    transform: scaleY(-1);
+    transform: translateY(var(--seat-offset, 0px)) scaleY(-1);
   }
   .chair rect,
   .chair path {
-    stroke: #a79e8e;
-    stroke-width: 1.2;
-  }
-  .chair rect {
-    fill: #e6dfd2;
-  }
-  .chair path {
-    fill: #c9beac;
+    stroke: var(--line);
+    stroke-width: 1;
+    fill: none;
   }
   .contribution-heading {
     font: 27px var(--serif);
@@ -894,8 +927,6 @@ const principles = [
       flex-direction: row;
       gap: 20px;
       padding: 32px 16px;
-      border-radius: 18px;
-      box-shadow: 0 3px 0 #c9beac;
     }
     .tabletop > * {
       flex: 1 1 0;

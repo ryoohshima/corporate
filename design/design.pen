@@ -908,25 +908,159 @@
                   "id": "q7tupA",
                   "name": "Table and pulled-out seats",
                   "width": "fill_container",
+                  "height": 573,
                   "layout": "vertical",
                   "children": [
                     {
                       "type": "frame",
-                      "id": "f0MuI",
-                      "name": "Shared tabletop / soft surface, no outline",
-                      "width": "fill_container",
-                      "fill": "#E6DFD2",
-                      "cornerRadius": 28,
-                      "stroke": "#CEC7BB",
-                      "effect": {
-                        "type": "shadow",
-                        "shadowType": "outer",
-                        "color": "#C9BEAC",
-                        "offset": {
-                          "x": 0,
-                          "y": 4
+                      "id": "BbgLn",
+                      "layoutPosition": "absolute",
+                      "x": 0,
+                      "y": 353,
+                      "name": "Two seats / pulled away from the near edge",
+                      "width": 1280,
+                      "gap": 80,
+                      "padding": [
+                        0,
+                        72
+                      ],
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "rJJyg",
+                          "name": "Your seat",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "U74NFx",
+                              "name": "Pull-out chair / downward",
+                              "flipY": true,
+                              "clip": true,
+                              "width": 220,
+                              "height": 220,
+                              "layout": "none",
+                              "children": [
+                                {
+                                  "type": "rectangle",
+                                  "id": "G5EHn",
+                                  "x": 0,
+                                  "y": 0,
+                                  "name": "Unused generated background",
+                                  "enabled": false,
+                                  "fill": "#ffffff80",
+                                  "width": 220,
+                                  "height": 220
+                                },
+                                {
+                                  "type": "rectangle",
+                                  "id": "jokG3",
+                                  "x": 55.825,
+                                  "y": 68.14775000000002,
+                                  "name": "Seat outline",
+                                  "width": 108.35,
+                                  "height": 109.345225,
+                                  "stroke": "$line",
+                                  "strokeWidth": 1
+                                },
+                                {
+                                  "type": "path",
+                                  "id": "t1Cov4",
+                                  "x": 55.825,
+                                  "y": 34.32,
+                                  "name": "Backrest / fine open outline",
+                                  "flipY": true,
+                                  "geometry": "M0 0l0 9.704 78.8 0 0-9.704",
+                                  "viewBox": [
+                                    0,
+                                    0,
+                                    78.8,
+                                    9.704
+                                  ],
+                                  "width": 108.35,
+                                  "height": 13.343,
+                                  "stroke": "$line",
+                                  "strokeWidth": 1
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "mdvkR",
+                          "name": "Panisia seat",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "JJgqR",
+                              "name": "Pull-out chair / downward",
+                              "flipY": true,
+                              "clip": true,
+                              "width": 220,
+                              "height": 220,
+                              "layout": "none",
+                              "children": [
+                                {
+                                  "type": "rectangle",
+                                  "id": "ySMRx",
+                                  "x": 0,
+                                  "y": 0,
+                                  "name": "Unused generated background",
+                                  "enabled": false,
+                                  "fill": "#ffffff80",
+                                  "width": 220,
+                                  "height": 220
+                                },
+                                {
+                                  "type": "rectangle",
+                                  "id": "RheXN",
+                                  "x": 55.825,
+                                  "y": 68.14775000000002,
+                                  "name": "Seat outline",
+                                  "width": 108.35,
+                                  "height": 109.345225,
+                                  "stroke": "$line",
+                                  "strokeWidth": 1
+                                },
+                                {
+                                  "type": "path",
+                                  "id": "V7kIRi",
+                                  "x": 55.825,
+                                  "y": 34.32,
+                                  "name": "Backrest / fine open outline",
+                                  "flipY": true,
+                                  "geometry": "M0 0l0 9.704 78.8 0 0-9.704",
+                                  "viewBox": [
+                                    0,
+                                    0,
+                                    78.8,
+                                    9.704
+                                  ],
+                                  "width": 108.35,
+                                  "height": 13.343,
+                                  "stroke": "$line",
+                                  "strokeWidth": 1
+                                }
+                              ]
+                            }
+                          ]
                         }
-                      },
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "f0MuI",
+                      "name": "Shared tabletop / fine outline, opaque canvas",
+                      "width": "fill_container",
+                      "fill": "$canvas",
+                      "stroke": "$line",
+                      "strokeWidth": 1,
                       "gap": 80,
                       "padding": [
                         64,
@@ -1107,147 +1241,6 @@
                               "fontSize": 11,
                               "fontWeight": "normal",
                               "letterSpacing": 1.4
-                            }
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "type": "frame",
-                      "id": "BbgLn",
-                      "name": "Two seats / pulled away from the near edge",
-                      "width": "fill_container",
-                      "gap": 80,
-                      "padding": [
-                        0,
-                        72
-                      ],
-                      "children": [
-                        {
-                          "type": "frame",
-                          "id": "rJJyg",
-                          "name": "Your seat",
-                          "width": "fill_container",
-                          "layout": "vertical",
-                          "alignItems": "center",
-                          "children": [
-                            {
-                              "type": "frame",
-                              "id": "U74NFx",
-                              "name": "Pull-out chair / downward",
-                              "flipY": true,
-                              "clip": true,
-                              "width": 220,
-                              "height": 220,
-                              "layout": "none",
-                              "children": [
-                                {
-                                  "type": "rectangle",
-                                  "id": "G5EHn",
-                                  "x": 0,
-                                  "y": 0,
-                                  "name": "Unused generated background",
-                                  "enabled": false,
-                                  "fill": "#ffffff80",
-                                  "width": 220,
-                                  "height": 220
-                                },
-                                {
-                                  "type": "rectangle",
-                                  "cornerRadius": 8,
-                                  "id": "jokG3",
-                                  "x": 55.825,
-                                  "y": 68.14775000000002,
-                                  "name": "Seat outline",
-                                  "fill": "#E6DFD2",
-                                  "width": 108.35,
-                                  "height": 109.345225,
-                                  "stroke": "#A79E8E",
-                                  "strokeWidth": 1.2
-                                },
-                                {
-                                  "type": "rectangle",
-                                  "cornerRadius": [
-                                    9.5,
-                                    9.5,
-                                    4,
-                                    4
-                                  ],
-                                  "id": "Vw68m",
-                                  "x": 55.825,
-                                  "y": 42,
-                                  "name": "Backrest / softly curved warm wood",
-                                  "fill": "#C9BEAC",
-                                  "width": 108.35,
-                                  "height": 19,
-                                  "stroke": "#A79E8E",
-                                  "strokeWidth": 1.2
-                                }
-                              ]
-                            }
-                          ]
-                        },
-                        {
-                          "type": "frame",
-                          "id": "mdvkR",
-                          "name": "Panisia seat",
-                          "width": "fill_container",
-                          "layout": "vertical",
-                          "alignItems": "center",
-                          "children": [
-                            {
-                              "type": "frame",
-                              "id": "JJgqR",
-                              "name": "Pull-out chair / downward",
-                              "flipY": true,
-                              "clip": true,
-                              "width": 220,
-                              "height": 220,
-                              "layout": "none",
-                              "children": [
-                                {
-                                  "type": "rectangle",
-                                  "id": "ySMRx",
-                                  "x": 0,
-                                  "y": 0,
-                                  "name": "Unused generated background",
-                                  "enabled": false,
-                                  "fill": "#ffffff80",
-                                  "width": 220,
-                                  "height": 220
-                                },
-                                {
-                                  "type": "rectangle",
-                                  "cornerRadius": 8,
-                                  "id": "RheXN",
-                                  "x": 55.825,
-                                  "y": 68.14775000000002,
-                                  "name": "Seat outline",
-                                  "fill": "#E6DFD2",
-                                  "width": 108.35,
-                                  "height": 109.345225,
-                                  "stroke": "#A79E8E",
-                                  "strokeWidth": 1.2
-                                },
-                                {
-                                  "type": "rectangle",
-                                  "cornerRadius": [
-                                    9.5,
-                                    9.5,
-                                    4,
-                                    4
-                                  ],
-                                  "id": "x1fmUZ",
-                                  "x": 55.825,
-                                  "y": 42,
-                                  "name": "Backrest / softly curved warm wood",
-                                  "fill": "#C9BEAC",
-                                  "width": 108.35,
-                                  "height": 19,
-                                  "stroke": "#A79E8E",
-                                  "strokeWidth": 1.2
-                                }
-                              ]
                             }
                           ]
                         }
@@ -3867,25 +3860,159 @@
                   "id": "nYTwj",
                   "name": "Table and pulled-out seats",
                   "width": "fill_container",
+                  "height": 400,
                   "layout": "vertical",
                   "children": [
                     {
                       "type": "frame",
-                      "id": "vo1sq",
-                      "name": "Shared tabletop / soft surface, no outline",
-                      "width": "fill_container",
-                      "fill": "#E6DFD2",
-                      "cornerRadius": 18,
-                      "stroke": "#CEC7BB",
-                      "effect": {
-                        "type": "shadow",
-                        "shadowType": "outer",
-                        "color": "#C9BEAC",
-                        "offset": {
-                          "x": 0,
-                          "y": 3
+                      "id": "pQhqc",
+                      "layoutPosition": "absolute",
+                      "x": 0,
+                      "y": 272,
+                      "name": "Two seats / pulled away from the near edge",
+                      "width": 342,
+                      "gap": 20,
+                      "padding": [
+                        0,
+                        16
+                      ],
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "oFBIG",
+                          "name": "Your seat",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "ycHmo",
+                              "name": "Pull-out chair / mobile final",
+                              "flipY": true,
+                              "clip": true,
+                              "width": 128,
+                              "height": 128,
+                              "layout": "none",
+                              "children": [
+                                {
+                                  "type": "rectangle",
+                                  "id": "dmGEk",
+                                  "x": 0,
+                                  "y": 0,
+                                  "name": "Unused generated background",
+                                  "enabled": false,
+                                  "fill": "#ffffff80",
+                                  "width": 128,
+                                  "height": 128
+                                },
+                                {
+                                  "type": "rectangle",
+                                  "id": "u8p2g",
+                                  "x": 32.480000000000004,
+                                  "y": 39.649600000000014,
+                                  "name": "Seat outline",
+                                  "width": 63.04,
+                                  "height": 63.61904,
+                                  "stroke": "$line",
+                                  "strokeWidth": 1
+                                },
+                                {
+                                  "type": "path",
+                                  "id": "yo0Yo",
+                                  "x": 32.48,
+                                  "y": 19.968,
+                                  "name": "Backrest / fine open outline",
+                                  "flipY": true,
+                                  "geometry": "M0 0l0 9.704 78.8 0 0-9.704",
+                                  "viewBox": [
+                                    0,
+                                    0,
+                                    78.8,
+                                    9.704
+                                  ],
+                                  "width": 63.03999999999999,
+                                  "height": 7.763199999999999,
+                                  "stroke": "$line",
+                                  "strokeWidth": 1
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "YC02P",
+                          "name": "Panisia seat",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "e1w7HJ",
+                              "name": "Pull-out chair / mobile final",
+                              "flipY": true,
+                              "clip": true,
+                              "width": 128,
+                              "height": 128,
+                              "layout": "none",
+                              "children": [
+                                {
+                                  "type": "rectangle",
+                                  "id": "wrBH8",
+                                  "x": 0,
+                                  "y": 0,
+                                  "name": "Unused generated background",
+                                  "enabled": false,
+                                  "fill": "#ffffff80",
+                                  "width": 128,
+                                  "height": 128
+                                },
+                                {
+                                  "type": "rectangle",
+                                  "id": "q0id1",
+                                  "x": 32.480000000000004,
+                                  "y": 39.649600000000014,
+                                  "name": "Seat outline",
+                                  "width": 63.04,
+                                  "height": 63.61904,
+                                  "stroke": "$line",
+                                  "strokeWidth": 1
+                                },
+                                {
+                                  "type": "path",
+                                  "id": "lHGlu",
+                                  "x": 32.48,
+                                  "y": 19.968,
+                                  "name": "Backrest / fine open outline",
+                                  "flipY": true,
+                                  "geometry": "M0 0l0 9.704 78.8 0 0-9.704",
+                                  "viewBox": [
+                                    0,
+                                    0,
+                                    78.8,
+                                    9.704
+                                  ],
+                                  "width": 63.03999999999999,
+                                  "height": 7.763199999999999,
+                                  "stroke": "$line",
+                                  "strokeWidth": 1
+                                }
+                              ]
+                            }
+                          ]
                         }
-                      },
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "vo1sq",
+                      "name": "Shared tabletop / fine outline, opaque canvas",
+                      "width": "fill_container",
+                      "fill": "$canvas",
+                      "stroke": "$line",
+                      "strokeWidth": 1,
                       "gap": 20,
                       "padding": [
                         32,
@@ -4058,147 +4185,6 @@
                                   "fontFamily": "Noto Sans JP",
                                   "fontSize": 12,
                                   "fontWeight": "normal"
-                                }
-                              ]
-                            }
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "type": "frame",
-                      "id": "pQhqc",
-                      "name": "Two seats / pulled away from the near edge",
-                      "width": "fill_container",
-                      "gap": 20,
-                      "padding": [
-                        0,
-                        16
-                      ],
-                      "children": [
-                        {
-                          "type": "frame",
-                          "id": "oFBIG",
-                          "name": "Your seat",
-                          "width": "fill_container",
-                          "layout": "vertical",
-                          "alignItems": "center",
-                          "children": [
-                            {
-                              "type": "frame",
-                              "id": "ycHmo",
-                              "name": "Pull-out chair / mobile final",
-                              "flipY": true,
-                              "clip": true,
-                              "width": 128,
-                              "height": 128,
-                              "layout": "none",
-                              "children": [
-                                {
-                                  "type": "rectangle",
-                                  "id": "dmGEk",
-                                  "x": 0,
-                                  "y": 0,
-                                  "name": "Unused generated background",
-                                  "enabled": false,
-                                  "fill": "#ffffff80",
-                                  "width": 128,
-                                  "height": 128
-                                },
-                                {
-                                  "type": "rectangle",
-                                  "cornerRadius": 5,
-                                  "id": "u8p2g",
-                                  "x": 32.480000000000004,
-                                  "y": 39.649600000000014,
-                                  "name": "Seat outline",
-                                  "fill": "#E6DFD2",
-                                  "width": 63.04,
-                                  "height": 63.61904,
-                                  "stroke": "#A79E8E",
-                                  "strokeWidth": 1.2
-                                },
-                                {
-                                  "type": "rectangle",
-                                  "cornerRadius": [
-                                    6,
-                                    6,
-                                    2,
-                                    2
-                                  ],
-                                  "id": "T14Bn",
-                                  "x": 32.480000000000004,
-                                  "y": 23.5,
-                                  "name": "Backrest / softly curved warm wood",
-                                  "fill": "#C9BEAC",
-                                  "width": 63.04,
-                                  "height": 12,
-                                  "stroke": "#A79E8E",
-                                  "strokeWidth": 1.2
-                                }
-                              ]
-                            }
-                          ]
-                        },
-                        {
-                          "type": "frame",
-                          "id": "YC02P",
-                          "name": "Panisia seat",
-                          "width": "fill_container",
-                          "layout": "vertical",
-                          "alignItems": "center",
-                          "children": [
-                            {
-                              "type": "frame",
-                              "id": "e1w7HJ",
-                              "name": "Pull-out chair / mobile final",
-                              "flipY": true,
-                              "clip": true,
-                              "width": 128,
-                              "height": 128,
-                              "layout": "none",
-                              "children": [
-                                {
-                                  "type": "rectangle",
-                                  "id": "wrBH8",
-                                  "x": 0,
-                                  "y": 0,
-                                  "name": "Unused generated background",
-                                  "enabled": false,
-                                  "fill": "#ffffff80",
-                                  "width": 128,
-                                  "height": 128
-                                },
-                                {
-                                  "type": "rectangle",
-                                  "cornerRadius": 5,
-                                  "id": "q0id1",
-                                  "x": 32.480000000000004,
-                                  "y": 39.649600000000014,
-                                  "name": "Seat outline",
-                                  "fill": "#E6DFD2",
-                                  "width": 63.04,
-                                  "height": 63.61904,
-                                  "stroke": "#A79E8E",
-                                  "strokeWidth": 1.2
-                                },
-                                {
-                                  "type": "rectangle",
-                                  "cornerRadius": [
-                                    6,
-                                    6,
-                                    2,
-                                    2
-                                  ],
-                                  "id": "l1qvqi",
-                                  "x": 32.480000000000004,
-                                  "y": 23.5,
-                                  "name": "Backrest / softly curved warm wood",
-                                  "fill": "#C9BEAC",
-                                  "width": 63.04,
-                                  "height": 12,
-                                  "stroke": "#A79E8E",
-                                  "strokeWidth": 1.2
                                 }
                               ]
                             }
