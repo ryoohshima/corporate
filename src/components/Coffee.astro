@@ -1,0 +1,61 @@
+---
+import artwork from "../assets/coffee.svg?raw";
+---
+<div class="coffee" data-coffee>
+  <div class="drawing" aria-hidden="true" set:html={artwork} />
+  <button type="button" aria-pressed="false" hidden>湯気を止める</button>
+</div>
+<script>
+  function initCoffee() {
+    document.querySelectorAll<HTMLElement>('[data-coffee]').forEach((el) => {
+      if (el.dataset.ready) return;
+      el.dataset.ready = 'true';
+      const button = el.querySelector('button')!;
+      const reduce = matchMedia('(prefers-reduced-motion: reduce)');
+      let paused = false;
+      let visible = false;
+      const update = () => {
+        el.classList.toggle('running', visible && !paused && !reduce.matches && !document.hidden);
+        button.hidden = reduce.matches;
+        button.textContent = paused ? '湯気を動かす' : '湯気を止める';
+        button.setAttribute('aria-pressed', String(paused));
+      };
+      const observer = new IntersectionObserver(([entry]) => {
+        visible = entry.isIntersecting;
+        update();
+      }, { threshold: 0.3 });
+      observer.observe(el);
+      button.addEventListener('click', () => { paused = !paused; update(); });
+      reduce.addEventListener('change', update);
+      document.addEventListener('visibilitychange', update);
+      document.addEventListener('astro:before-swap', () => {
+        observer.disconnect();
+        reduce.removeEventListener('change', update);
+        document.removeEventListener('visibilitychange', update);
+      }, { once: true });
+      update();
+    });
+  }
+  initCoffee();
+  document.addEventListener('astro:page-load', initCoffee);
+</script>
+<style>
+  .coffee { position: relative; width: 180px; flex-shrink: 0; }
+  .drawing { height: 160px; }
+  .drawing :global(> svg) { display: block; width: 100%; height: 100%; }
+  .drawing :global(path), .drawing :global(ellipse) { fill: none; stroke: #a29283; stroke-width: 1.2; }
+  .drawing :global(.steam path) { stroke-width: .65; }
+  .drawing :global(.steam) { transform-box: fill-box; transform-origin: center; animation: drift 7s ease-in-out infinite paused; }
+  .drawing :global(.steam:nth-last-child(2)) { animation-delay: -3.5s; }
+  .running .drawing :global(.steam) { animation-play-state: running; }
+  @keyframes drift {
+    0%, 100% { opacity: .2; transform: translate(0, 2px) scale(.95); }
+    45% { opacity: .85; transform: translate(-3px, -5px) scale(1.12); }
+    75% { opacity: .25; transform: translate(2px, -9px) scale(1.2); }
+  }
+  button { display: block; margin-inline: auto; padding: 5px; border: 0; background: transparent; color: #6f6a61; font: 10px/1.8 serif; cursor: pointer; }
+  button[hidden] { display: none; }
+  button:focus-visible { outline: 2px solid #a95538; outline-offset: 2px; }
+  @media (max-width: 800px) { .coffee { width: 120px; } .drawing { height: 110px; } }
+  @media (prefers-reduced-motion: reduce) { .drawing :global(.steam) { animation: none; } }
+</style>

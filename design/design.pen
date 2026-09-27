@@ -1299,7 +1299,7 @@
               "id": "rRNUa",
               "name": "03 / Manifesto",
               "width": "fill_container",
-              "fill": "$surface",
+              "fill": "$canvas",
               "layout": "vertical",
               "gap": 48,
               "padding": [
@@ -1307,6 +1307,17 @@
                 48
               ],
               "children": [
+                {
+                  "type": "rectangle",
+                  "id": "fU9YL",
+                  "layoutPosition": "absolute",
+                  "x": -32,
+                  "y": 0,
+                  "name": "Full-bleed background band",
+                  "fill": "$canvas",
+                  "width": 1440,
+                  "height": 599
+                },
                 {
                   "type": "text",
                   "id": "avU4F",
@@ -1468,6 +1479,7 @@
               "id": "LLfI4",
               "name": "05 / What We Make Together",
               "width": "fill_container",
+              "fill": "$canvas",
               "layout": "vertical",
               "gap": 48,
               "padding": [
@@ -1477,6 +1489,18 @@
                 48
               ],
               "children": [
+                {
+                  "type": "rectangle",
+                  "id": "a30et",
+                  "layoutPosition": "absolute",
+                  "x": -32,
+                  "y": 0,
+                  "name": "Full-bleed background / concrete activities",
+                  "enabled": false,
+                  "fill": "$surface",
+                  "width": 1440,
+                  "height": 847
+                },
                 {
                   "type": "frame",
                   "id": "Nnoqw",
@@ -1840,9 +1864,9 @@
             {
               "type": "frame",
               "id": "vnrma",
-              "name": "06 / Selected Work — awaiting approved case study",
+              "name": "05 / Selected Work — publication pending",
               "width": "fill_container",
-              "fill": "$surface",
+              "fill": "$canvas",
               "layout": "vertical",
               "gap": 48,
               "padding": [
@@ -1850,6 +1874,18 @@
                 48
               ],
               "children": [
+                {
+                  "type": "rectangle",
+                  "id": "Fa46k",
+                  "layoutPosition": "absolute",
+                  "x": -32,
+                  "y": 0,
+                  "name": "Full-bleed background / concrete activities",
+                  "enabled": false,
+                  "fill": "$surface",
+                  "width": 1440,
+                  "height": 568
+                },
                 {
                   "type": "text",
                   "id": "ZFPTd",
@@ -1919,16 +1955,22 @@
                 {
                   "type": "rectangle",
                   "id": "Qivot",
+                  "x": 48,
+                  "y": 354,
                   "name": "Table Line",
+                  "enabled": false,
                   "fill": "$line",
-                  "width": "fill_container",
+                  "width": 1280,
                   "height": 1
                 },
                 {
                   "type": "frame",
                   "id": "X7zrAY",
+                  "x": 48,
+                  "y": 403,
                   "name": "Equal work attribution",
-                  "width": "fill_container",
+                  "enabled": false,
+                  "width": 1280,
                   "gap": 80,
                   "children": [
                     {
@@ -2002,7 +2044,7 @@
               "id": "lJvyQ",
               "name": "07 / How We Work",
               "width": "fill_container",
-              "fill": "#F3EFE6",
+              "fill": "$canvas",
               "layout": "vertical",
               "gap": 48,
               "padding": [
@@ -2010,6 +2052,18 @@
                 48
               ],
               "children": [
+                {
+                  "type": "rectangle",
+                  "id": "V4lrJ",
+                  "layoutPosition": "absolute",
+                  "x": -32,
+                  "y": 0,
+                  "name": "Full-bleed background / concrete activities",
+                  "enabled": false,
+                  "fill": "$surface",
+                  "width": 1440,
+                  "height": 761
+                },
                 {
                   "type": "text",
                   "id": "E9XDK",
@@ -2779,7 +2833,7 @@
               "id": "ELBSx",
               "name": "09 / Invitation — Contact",
               "width": "fill_container",
-              "fill": "$surface",
+              "fill": "$canvas",
               "layout": "vertical",
               "gap": 38,
               "padding": [
@@ -2789,6 +2843,17 @@
                 48
               ],
               "children": [
+                {
+                  "type": "rectangle",
+                  "id": "XQiLV",
+                  "layoutPosition": "absolute",
+                  "x": -32,
+                  "y": 0,
+                  "name": "Full-bleed background band",
+                  "fill": "$canvas",
+                  "width": 1440,
+                  "height": 541
+                },
                 {
                   "type": "text",
                   "id": "fpylg",
@@ -4248,7 +4313,7 @@
               "id": "eu1Y1",
               "name": "03 / Manifesto",
               "width": "fill_container",
-              "fill": "$surface",
+              "fill": "$canvas",
               "layout": "vertical",
               "gap": 32,
               "padding": [
@@ -4256,6 +4321,17 @@
                 12
               ],
               "children": [
+                {
+                  "type": "rectangle",
+                  "id": "NBR6R",
+                  "layoutPosition": "absolute",
+                  "x": -12,
+                  "y": 0,
+                  "name": "Full-bleed background band",
+                  "fill": "$canvas",
+                  "width": 390,
+                  "height": 591
+                },
                 {
                   "type": "text",
                   "id": "tziec",
@@ -4417,6 +4493,7 @@
               "id": "v8RZmS",
               "name": "05 / What We Make Together",
               "width": "fill_container",
+              "fill": "$canvas",
               "layout": "vertical",
               "gap": 32,
               "padding": [
@@ -4424,6 +4501,18 @@
                 12
               ],
               "children": [
+                {
+                  "type": "rectangle",
+                  "id": "kWOPt",
+                  "layoutPosition": "absolute",
+                  "x": -12,
+                  "y": 0,
+                  "name": "Full-bleed background / concrete activities",
+                  "enabled": false,
+                  "fill": "$surface",
+                  "width": 390,
+                  "height": 1156
+                },
                 {
                   "type": "frame",
                   "id": "i0LeH",
@@ -4788,9 +4877,9 @@
             {
               "type": "frame",
               "id": "n72wfi",
-              "name": "06 / Selected Work — awaiting approved case study",
+              "name": "05 / Selected Work — publication pending",
               "width": "fill_container",
-              "fill": "$surface",
+              "fill": "$canvas",
               "layout": "vertical",
               "gap": 32,
               "padding": [
@@ -4798,6 +4887,18 @@
                 12
               ],
               "children": [
+                {
+                  "type": "rectangle",
+                  "id": "Oh3qI",
+                  "layoutPosition": "absolute",
+                  "x": -12,
+                  "y": 0,
+                  "name": "Full-bleed background / concrete activities",
+                  "enabled": false,
+                  "fill": "$surface",
+                  "width": 390,
+                  "height": 721
+                },
                 {
                   "type": "text",
                   "id": "rmUf1",
@@ -4870,16 +4971,22 @@
                 {
                   "type": "rectangle",
                   "id": "Ivs51",
+                  "x": 12,
+                  "y": 454,
                   "name": "Table Line",
+                  "enabled": false,
                   "fill": "$line",
-                  "width": "fill_container",
+                  "width": 342,
                   "height": 1
                 },
                 {
                   "type": "frame",
                   "id": "hUN1T",
+                  "x": 12,
+                  "y": 487,
                   "name": "Equal work attribution",
-                  "width": "fill_container",
+                  "enabled": false,
+                  "width": 342,
                   "layout": "vertical",
                   "gap": 32,
                   "children": [
@@ -4954,6 +5061,7 @@
               "id": "Qnf8Z",
               "name": "07 / How We Work",
               "width": "fill_container",
+              "fill": "$canvas",
               "layout": "vertical",
               "gap": 32,
               "padding": [
@@ -4961,6 +5069,18 @@
                 12
               ],
               "children": [
+                {
+                  "type": "rectangle",
+                  "id": "UT6ZI",
+                  "layoutPosition": "absolute",
+                  "x": -12,
+                  "y": 0,
+                  "name": "Full-bleed background / concrete activities",
+                  "enabled": false,
+                  "fill": "$surface",
+                  "width": 390,
+                  "height": 1401
+                },
                 {
                   "type": "text",
                   "id": "moSqC",
@@ -5642,7 +5762,7 @@
               "id": "HJiwS",
               "name": "09 / Invitation — Contact",
               "width": "fill_container",
-              "fill": "$surface",
+              "fill": "$canvas",
               "layout": "vertical",
               "gap": 32,
               "padding": [
@@ -5650,6 +5770,17 @@
                 12
               ],
               "children": [
+                {
+                  "type": "rectangle",
+                  "id": "Jiyds",
+                  "layoutPosition": "absolute",
+                  "x": -12,
+                  "y": 0,
+                  "name": "Full-bleed background band",
+                  "fill": "$canvas",
+                  "width": 390,
+                  "height": 523
+                },
                 {
                   "type": "text",
                   "id": "IYcxY",
@@ -5930,6 +6061,718 @@
                   "content": "Privacy policy ↗",
                   "fontFamily": "Inter",
                   "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "wy0AN",
+      "x": 2050,
+      "y": 0,
+      "name": "REFERENCE ONLY / Selected Work carousel / Desktop",
+      "clip": true,
+      "width": 1376,
+      "fill": "$canvas",
+      "layout": "vertical",
+      "gap": 48,
+      "padding": [
+        100,
+        48
+      ],
+      "children": [
+        {
+          "type": "rectangle",
+          "id": "hnKAr",
+          "layoutPosition": "absolute",
+          "x": -32,
+          "y": 0,
+          "name": "Full-bleed background / concrete activities",
+          "enabled": false,
+          "fill": "$surface",
+          "width": 1440,
+          "height": 568
+        },
+        {
+          "type": "text",
+          "id": "U4CKZ5",
+          "name": "Section label",
+          "fill": "$muted",
+          "content": "05 / SELECTED WORK",
+          "fontFamily": "Inter",
+          "fontSize": 12,
+          "fontWeight": "normal",
+          "letterSpacing": 1.6
+        },
+        {
+          "type": "frame",
+          "id": "ytI9g",
+          "name": "Work introduction",
+          "width": "fill_container",
+          "gap": 80,
+          "children": [
+            {
+              "type": "text",
+              "id": "yeQ3Q",
+              "name": "Work heading",
+              "fill": "$ink",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "一緒につくったもの。\nその背景にあること。",
+              "lineHeight": 1.45,
+              "fontFamily": "Noto Serif JP",
+              "fontSize": 43,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "l2M3qw",
+              "name": "Work availability",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "po1TT",
+                  "name": "Publication status",
+                  "fill": "$muted",
+                  "content": "事例レイアウト案 / 写真・文言は仮素材",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "HzeV8",
+                  "name": "Work framing",
+                  "fill": "$ink",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "完成したものだけでなく、出発点となった課題、\nお互いが持ち寄った知識、そこから得た学びまで。\n私たちの仕事の過程をお伝えしていきます。",
+                  "lineHeight": 1.9,
+                  "fontFamily": "Noto Serif JP",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "Tx4tx",
+          "name": "Case study carousel / static preview",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 24,
+          "children": [
+            {
+              "type": "frame",
+              "id": "lrONd",
+              "name": "Featured case and next preview",
+              "width": "fill_container",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "TlysF",
+                  "name": "Featured case / provisional image",
+                  "metadata": {
+                    "type": "unsplash",
+                    "username": "yenkyle",
+                    "link": "https://unsplash.com/@yenkyle",
+                    "author": "Kyle Yen"
+                  },
+                  "clip": true,
+                  "width": "fill_container",
+                  "height": 520,
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "https://images.unsplash.com/photo-1786895102612-9ebdf6b0945c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA1MTE5MDN8&ixlib=rb-4.1.0&q=80&w=1080",
+                    "mode": "fill"
+                  }
+                },
+                {
+                  "type": "frame",
+                  "id": "AcIlS",
+                  "name": "Next case / cropped preview",
+                  "metadata": {
+                    "type": "unsplash",
+                    "username": "anniespratt",
+                    "link": "https://unsplash.com/@anniespratt",
+                    "author": "Annie Spratt"
+                  },
+                  "clip": true,
+                  "width": 200,
+                  "height": 520,
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "https://images.unsplash.com/photo-1775834247514-91303b8fc128?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA1MTE5MDN8&ixlib=rb-4.1.0&q=80&w=1080",
+                    "mode": "fill"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Ek9ph",
+              "name": "Case caption",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "OPPEa",
+                  "name": "Sample case number",
+                  "fill": "$muted",
+                  "content": "01 / CASE STUDY — SAMPLE",
+                  "fontFamily": "Inter",
+                  "fontSize": 11,
+                  "fontWeight": "normal",
+                  "letterSpacing": 1.2
+                },
+                {
+                  "type": "text",
+                  "id": "jMjkT",
+                  "name": "Provisional case title",
+                  "fill": "$ink",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "事例タイトルが入ります",
+                  "fontFamily": "Noto Serif JP",
+                  "fontSize": 32,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "x4L45",
+                  "name": "Provisional case description",
+                  "fill": "$muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "課題と、持ち寄った知識。ともにつくったものを紹介します。",
+                  "lineHeight": 1.8,
+                  "fontFamily": "Noto Serif JP",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "QpWxo",
+              "name": "Carousel navigation / visual concept",
+              "width": "fill_container",
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "WSP6E",
+                  "name": "Slide count",
+                  "fill": "$muted",
+                  "content": "01 — 03",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "uyYvA",
+                  "name": "Previous and next",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "WvPoy",
+                      "name": "arrow-left",
+                      "width": 44,
+                      "height": 44,
+                      "stroke": "$line",
+                      "strokeWidth": 1,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "q9D72",
+                          "name": "arrow-left",
+                          "width": 18,
+                          "height": 18,
+                          "icon": "arrow-left",
+                          "library": "lucide",
+                          "fill": "$ink"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "UDs6p",
+                      "name": "arrow-right",
+                      "width": 44,
+                      "height": 44,
+                      "stroke": "$line",
+                      "strokeWidth": 1,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "w2HOS",
+                          "name": "arrow-right",
+                          "width": 18,
+                          "height": 18,
+                          "icon": "arrow-right",
+                          "library": "lucide",
+                          "fill": "$ink"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "rectangle",
+          "id": "wCCBz",
+          "x": 48,
+          "y": 354,
+          "name": "Table Line",
+          "enabled": false,
+          "fill": "$line",
+          "width": 1280,
+          "height": 1
+        },
+        {
+          "type": "frame",
+          "id": "i32Np",
+          "x": 48,
+          "y": 403,
+          "name": "Equal work attribution",
+          "enabled": false,
+          "width": 1280,
+          "gap": 80,
+          "children": [
+            {
+              "type": "frame",
+              "id": "gYe0E",
+              "name": "お客様の知識と経験",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "lmWU4",
+                  "name": "Contribution label",
+                  "fill": "$muted",
+                  "content": "WHAT THEY BROUGHT",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "normal",
+                  "letterSpacing": 1.6
+                },
+                {
+                  "type": "text",
+                  "id": "r0Gsjw",
+                  "name": "Contribution title",
+                  "fill": "$ink",
+                  "content": "お客様の知識と経験",
+                  "fontFamily": "Noto Serif JP",
+                  "fontSize": 24,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "errN4",
+              "name": "私たちの設計と技術",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "P82Vj6",
+                  "name": "Contribution label",
+                  "fill": "$muted",
+                  "content": "WHAT Panisia BROUGHT",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "normal",
+                  "letterSpacing": 1.6
+                },
+                {
+                  "type": "text",
+                  "id": "FFF7y",
+                  "name": "Contribution title",
+                  "fill": "$ink",
+                  "content": "私たちの設計と技術",
+                  "fontFamily": "Noto Serif JP",
+                  "fontSize": 24,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "MRVYf",
+      "x": 3526,
+      "y": 0,
+      "name": "REFERENCE ONLY / Selected Work carousel / Mobile",
+      "clip": true,
+      "width": 366,
+      "fill": "$canvas",
+      "layout": "vertical",
+      "gap": 32,
+      "padding": [
+        72,
+        12
+      ],
+      "children": [
+        {
+          "type": "rectangle",
+          "id": "J3K8Pm",
+          "layoutPosition": "absolute",
+          "x": -12,
+          "y": 0,
+          "name": "Full-bleed background / concrete activities",
+          "enabled": false,
+          "fill": "$surface",
+          "width": 390,
+          "height": 721
+        },
+        {
+          "type": "text",
+          "id": "lyTd4",
+          "name": "Section label",
+          "fill": "$muted",
+          "content": "05 / SELECTED WORK",
+          "fontFamily": "Inter",
+          "fontSize": 12,
+          "fontWeight": "normal",
+          "letterSpacing": 1.6
+        },
+        {
+          "type": "frame",
+          "id": "SvzaW",
+          "name": "Work introduction",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 32,
+          "children": [
+            {
+              "type": "text",
+              "id": "z7uCeZ",
+              "name": "Work heading",
+              "fill": "$ink",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "一緒につくったもの。\nその背景にあること。",
+              "lineHeight": 1.45,
+              "fontFamily": "Noto Serif JP",
+              "fontSize": 34,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "LSwK9",
+              "name": "Work availability",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "m8SXGP",
+                  "name": "Publication status",
+                  "fill": "$muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "事例レイアウト案 / 写真・文言は仮素材",
+                  "fontFamily": "Inter",
+                  "fontSize": 11,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "EKEo1",
+                  "name": "Work framing",
+                  "fill": "$ink",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "完成したものだけでなく、出発点となった課題、お互いが持ち寄った知識、そこから得た学びまで。私たちの仕事の過程をお伝えしていきます。",
+                  "lineHeight": 1.9,
+                  "fontFamily": "Noto Serif JP",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "C3V17y",
+          "name": "Case study carousel / static preview",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 24,
+          "children": [
+            {
+              "type": "frame",
+              "id": "d7Wylz",
+              "name": "Featured case and next preview",
+              "width": "fill_container",
+              "gap": 16,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "Ni65B",
+                  "name": "Featured case / provisional image",
+                  "clip": true,
+                  "width": "fill_container",
+                  "height": 240,
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "https://images.unsplash.com/photo-1786895102612-9ebdf6b0945c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA1MTE5MDN8&ixlib=rb-4.1.0&q=80&w=1080",
+                    "mode": "fill"
+                  }
+                },
+                {
+                  "type": "frame",
+                  "id": "g0kW1U",
+                  "name": "Next case / cropped preview",
+                  "clip": true,
+                  "width": 40,
+                  "height": 240,
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "https://images.unsplash.com/photo-1775834247514-91303b8fc128?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA1MTE5MDN8&ixlib=rb-4.1.0&q=80&w=1080",
+                    "mode": "fill"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "STRBw",
+              "name": "Case caption",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Y2nDWQ",
+                  "name": "Sample case number",
+                  "fill": "$muted",
+                  "content": "01 / CASE STUDY — SAMPLE",
+                  "fontFamily": "Inter",
+                  "fontSize": 11,
+                  "fontWeight": "normal",
+                  "letterSpacing": 1.2
+                },
+                {
+                  "type": "text",
+                  "id": "l9vo4",
+                  "name": "Provisional case title",
+                  "fill": "$ink",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "事例タイトルが入ります",
+                  "fontFamily": "Noto Serif JP",
+                  "fontSize": 23,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "Lrxe8",
+                  "name": "Provisional case description",
+                  "fill": "$muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "課題と、持ち寄った知識。ともにつくったものを紹介します。",
+                  "lineHeight": 1.8,
+                  "fontFamily": "Noto Serif JP",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "LnIQB",
+              "name": "Carousel navigation / visual concept",
+              "width": "fill_container",
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "M0eLM",
+                  "name": "Slide count",
+                  "fill": "$muted",
+                  "content": "01 — 03",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "koHKQ",
+                  "name": "Previous and next",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "OvqN2",
+                      "name": "arrow-left",
+                      "width": 44,
+                      "height": 44,
+                      "stroke": "$line",
+                      "strokeWidth": 1,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "D8TXG",
+                          "name": "arrow-left",
+                          "width": 18,
+                          "height": 18,
+                          "icon": "arrow-left",
+                          "library": "lucide",
+                          "fill": "$ink"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "U0VvKg",
+                      "name": "arrow-right",
+                      "width": 44,
+                      "height": 44,
+                      "stroke": "$line",
+                      "strokeWidth": 1,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "C6k4Ae",
+                          "name": "arrow-right",
+                          "width": 18,
+                          "height": 18,
+                          "icon": "arrow-right",
+                          "library": "lucide",
+                          "fill": "$ink"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "rectangle",
+          "id": "V7HIOu",
+          "x": 12,
+          "y": 454,
+          "name": "Table Line",
+          "enabled": false,
+          "fill": "$line",
+          "width": 342,
+          "height": 1
+        },
+        {
+          "type": "frame",
+          "id": "iR5yx",
+          "x": 12,
+          "y": 487,
+          "name": "Equal work attribution",
+          "enabled": false,
+          "width": 342,
+          "layout": "vertical",
+          "gap": 32,
+          "children": [
+            {
+              "type": "frame",
+              "id": "bbaFp",
+              "name": "お客様の知識と経験",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "m3OOv",
+                  "name": "Contribution label",
+                  "fill": "$muted",
+                  "content": "WHAT THEY BROUGHT",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "normal",
+                  "letterSpacing": 1.6
+                },
+                {
+                  "type": "text",
+                  "id": "x9Cvle",
+                  "name": "Contribution title",
+                  "fill": "$ink",
+                  "content": "お客様の知識と経験",
+                  "fontFamily": "Noto Serif JP",
+                  "fontSize": 24,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "UTXWZ",
+              "name": "私たちの設計と技術",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "jpcGa",
+                  "name": "Contribution label",
+                  "fill": "$muted",
+                  "content": "WHAT Panisia BROUGHT",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "normal",
+                  "letterSpacing": 1.6
+                },
+                {
+                  "type": "text",
+                  "id": "BFEws",
+                  "name": "Contribution title",
+                  "fill": "$ink",
+                  "content": "私たちの設計と技術",
+                  "fontFamily": "Noto Serif JP",
+                  "fontSize": 24,
                   "fontWeight": "normal"
                 }
               ]
