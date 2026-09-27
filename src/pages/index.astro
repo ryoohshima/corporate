@@ -106,7 +106,6 @@ const principles = [
           <p class="intro">
             Panisiaは、依頼する側とつくる側を分けません。<br />あなたの知識と、私たちの技術を同じテーブルに<br />持ち寄り、ひとつの課題を一緒に考えます。
           </p>
-          <canvas class="hero-visual" aria-hidden="true"></canvas>
           <div class="hero-baseline">
             <p class="label">PANISIA / DESIGN &amp; TECHNOLOGY</p>
             <a class="label" href="#approach">EXPLORE OUR APPROACH ↓</a>
@@ -375,60 +374,6 @@ const principles = [
         }
       });
     </script>
-    <script>
-      import {
-        IcosahedronGeometry,
-        Mesh,
-        MeshBasicMaterial,
-        PerspectiveCamera,
-        Scene,
-        WebGLRenderer,
-      } from "three";
-
-      const canvas = document.querySelector<HTMLCanvasElement>(".hero-visual");
-      if (canvas) {
-        try {
-          const renderer = new WebGLRenderer({ canvas, alpha: true, antialias: true });
-          renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
-
-          const scene = new Scene();
-          const camera = new PerspectiveCamera(45, 1, 0.1, 100);
-          camera.position.z = 6;
-          const shape = new Mesh(
-            new IcosahedronGeometry(1.65, 1),
-            new MeshBasicMaterial({ color: 0xa95538, wireframe: true }),
-          );
-          scene.add(shape);
-
-          new ResizeObserver(() => {
-            const size = canvas.clientWidth;
-            camera.aspect = canvas.clientWidth / canvas.clientHeight;
-            camera.updateProjectionMatrix();
-            renderer.setSize(size, canvas.clientHeight, false);
-            renderer.render(scene, camera);
-          }).observe(canvas);
-
-          const reduced = matchMedia("(prefers-reduced-motion: reduce)");
-          function updateMotion() {
-            if (reduced.matches || document.hidden) {
-              renderer.setAnimationLoop(null);
-              if (!document.hidden) renderer.render(scene, camera);
-            } else {
-              renderer.setAnimationLoop((time) => {
-                shape.rotation.x = time * 0.00015;
-                shape.rotation.y = time * 0.00025;
-                renderer.render(scene, camera);
-              });
-            }
-          }
-          reduced.addEventListener("change", updateMotion);
-          document.addEventListener("visibilitychange", updateMotion);
-          updateMotion();
-        } catch {
-          canvas.remove();
-        }
-      }
-    </script>
   </body>
 </html>
 
@@ -609,27 +554,11 @@ const principles = [
     font-size: 17px;
     line-height: 32px;
   }
-  .hero-visual {
-    position: absolute;
-    top: 24px;
-    right: 24px;
-    width: min(42%, 430px);
-    aspect-ratio: 1;
-    pointer-events: none;
-  }
   .hero-baseline {
     display: flex;
     justify-content: space-between;
     padding: 8px 0;
     margin-top: -12px;
-  }
-
-  @media (max-width: 1100px) {
-    .hero-visual {
-      position: static;
-      align-self: center;
-      width: min(100%, 360px);
-    }
   }
 
   /* Chairs: 天板（.table）が後から描画され、座面の下半分を隠す */
