@@ -11,7 +11,8 @@
     "astro": "astro",
     "lint": "biome check .",
     "lint:fix": "biome check --write .",
-    "typecheck": "astro check"
+    "typecheck": "astro check",
+    "deploy": "astro build && wrangler deploy"
   },
   "dependencies": {
     "astro": "^7.3.5",
@@ -23,7 +24,8 @@
     "@astrojs/check": "^0.9.10",
     "@biomejs/biome": "^2.5.14",
     "@types/three": "^0.186.0",
-    "typescript": "^6.0.3"
+    "typescript": "^6.0.3",
+    "wrangler": "^4.141.0"
   },
   "packageManager": "pnpm@11.6.0"
 }
