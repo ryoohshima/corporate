@@ -6,7 +6,9 @@
     "useIgnoreFile": true
   },
   "files": {
-    "ignoreUnknown": true
+    "ignoreUnknown": true,
+    // design/ はデザイン試作物のため対象外
+    "includes": ["**", "!design"]
   },
   "formatter": {
     "indentStyle": "space"
