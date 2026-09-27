@@ -518,8 +518,8 @@
                               "name": "Notebook outline",
                               "width": 141.4356,
                               "height": 220.3398,
-                              "stroke": "#211F1B",
-                              "strokeWidth": 1.1
+                              "stroke": "$line",
+                              "strokeWidth": 1
                             },
                             {
                               "type": "path",
@@ -530,8 +530,8 @@
                               "geometry": "M0 0l0 183.61699",
                               "width": 0,
                               "height": 220.3404,
-                              "stroke": "#211F1B",
-                              "strokeWidth": 1.1
+                              "stroke": "$line",
+                              "strokeWidth": 1
                             },
                             {
                               "type": "rectangle",
@@ -541,8 +541,8 @@
                               "name": "Paper outline",
                               "width": 141.91619999999998,
                               "height": 220.3398,
-                              "stroke": "#211F1B",
-                              "strokeWidth": 1.1
+                              "stroke": "$line",
+                              "strokeWidth": 1
                             },
                             {
                               "type": "path",
@@ -553,8 +553,8 @@
                               "geometry": "M0 0l30.07449 0",
                               "width": 36.0894,
                               "height": 0,
-                              "stroke": "#211F1B",
-                              "strokeWidth": 1.1
+                              "stroke": "$line",
+                              "strokeWidth": 1
                             },
                             {
                               "type": "path",
@@ -565,8 +565,8 @@
                               "geometry": "M0 0l30.07449 0",
                               "width": 36.0894,
                               "height": 0,
-                              "stroke": "#211F1B",
-                              "strokeWidth": 1.1
+                              "stroke": "$line",
+                              "strokeWidth": 1
                             }
                           ]
                         }
@@ -707,8 +707,8 @@
                       "name": "Seat outline",
                       "width": 78.8,
                       "height": 79.5238,
-                      "stroke": "#211F1B",
-                      "strokeWidth": 1.1
+                      "stroke": "$line",
+                      "strokeWidth": 1
                     },
                     {
                       "type": "path",
@@ -719,8 +719,8 @@
                       "geometry": "M0 0l0 9.704 78.8 0 0-9.704",
                       "width": 78.8,
                       "height": 9.704,
-                      "stroke": "#211F1B",
-                      "strokeWidth": 1.1
+                      "stroke": "$line",
+                      "strokeWidth": 1
                     }
                   ]
                 },
@@ -752,8 +752,8 @@
                       "name": "Seat outline",
                       "width": 78.8,
                       "height": 79.5238,
-                      "stroke": "#211F1B",
-                      "strokeWidth": 1.1
+                      "stroke": "$line",
+                      "strokeWidth": 1
                     },
                     {
                       "type": "path",
@@ -764,8 +764,8 @@
                       "geometry": "M0 0l0 9.704 78.8 0 0-9.704",
                       "width": 78.8,
                       "height": 9.704,
-                      "stroke": "#211F1B",
-                      "strokeWidth": 1.1
+                      "stroke": "$line",
+                      "strokeWidth": 1
                     }
                   ]
                 }
@@ -804,8 +804,8 @@
               "name": "Seat outline",
               "width": 108.35,
               "height": 109.345225,
-              "stroke": "#211F1B",
-              "strokeWidth": 1.1
+              "stroke": "$line",
+              "strokeWidth": 1
             },
             {
               "type": "path",
@@ -817,8 +817,8 @@
               "geometry": "M0 0l0 9.704 78.8 0 0-9.704",
               "width": 108.35,
               "height": 13.343,
-              "stroke": "#211F1B",
-              "strokeWidth": 1.1
+              "stroke": "$line",
+              "strokeWidth": 1
             }
           ]
         },
@@ -853,8 +853,8 @@
               "name": "Seat outline",
               "width": 108.35,
               "height": 109.345225,
-              "stroke": "#211F1B",
-              "strokeWidth": 1.1
+              "stroke": "$line",
+              "strokeWidth": 1
             },
             {
               "type": "path",
@@ -866,8 +866,8 @@
               "geometry": "M0 0l0 9.704 78.8 0 0-9.704",
               "width": 108.35,
               "height": 13.343,
-              "stroke": "#211F1B",
-              "strokeWidth": 1.1
+              "stroke": "$line",
+              "strokeWidth": 1
             }
           ]
         },
@@ -1329,7 +1329,7 @@
                       "fill": {
                         "type": "image",
                         "enabled": true,
-                        "url": "generated-1.png",
+                        "url": "panis-editorial.jpg",
                         "mode": "fill"
                       }
                     },
@@ -2001,7 +2001,7 @@
                           "geometry": "M55.74 0l-55.74 0 0 86.38 55.74 0 0-86.38z",
                           "width": 55.74,
                           "height": 86.38,
-                          "stroke": "#211F1B",
+                          "stroke": "$line",
                           "strokeWidth": 1,
                           "strokeLinejoin": "round"
                         },
@@ -2014,7 +2014,7 @@
                           "geometry": "M0 0l0 86.38",
                           "width": 0,
                           "height": 86.38,
-                          "stroke": "#211F1B",
+                          "stroke": "$line",
                           "strokeWidth": 1
                         },
                         {
@@ -2026,7 +2026,7 @@
                           "geometry": "M3.78001 0l-3.78001 0 0 73.52 1.86 8.74 1.92001-8.74 0-73.52z",
                           "width": 3.78,
                           "height": 82.26,
-                          "stroke": "#211F1B",
+                          "stroke": "$line",
                           "strokeWidth": 1,
                           "strokeLinejoin": "round"
                         },
@@ -2039,7 +2039,7 @@
                           "geometry": "M0 0l3.78001 0",
                           "width": 3.78,
                           "height": 0,
-                          "stroke": "#211F1B",
+                          "stroke": "$line",
                           "strokeWidth": 1
                         }
                       ]
@@ -2507,7 +2507,7 @@
                                           "geometry": "M21.042 10.866c0 0.936-0.048 1.878-0.186 2.73-1.074 4.644-5.472 8.112-10.23 8.112-5.982 0-10.626-4.95-10.626-10.842 0-6.072 4.884-10.866 10.626-10.866 5.064 0 9.198 3.69 10.14 8.358 0.198 0.81 0.276 1.662 0.276 2.508z",
                                           "width": 10.521,
                                           "height": 10.854,
-                                          "stroke": "#211F1B",
+                                          "stroke": "$line",
                                           "strokeWidth": 1
                                         },
                                         {
@@ -2519,7 +2519,7 @@
                                           "geometry": "M4.428 2.766c0 1.548-1.248 2.748-2.784 2.748l-1.644 0 0-5.514 1.644 0c1.536 0 2.784 1.182 2.784 2.766z",
                                           "width": 2.214,
                                           "height": 2.757,
-                                          "stroke": "#211F1B",
+                                          "stroke": "$line",
                                           "strokeWidth": 1
                                         }
                                       ]
@@ -2585,7 +2585,7 @@
                                           "geometry": "M21.042 10.866c0 0.936-0.048 1.878-0.186 2.73-1.074 4.644-5.472 8.112-10.23 8.112-5.982 0-10.626-4.95-10.626-10.842 0-6.072 4.884-10.866 10.626-10.866 5.064 0 9.198 3.69 10.14 8.358 0.198 0.81 0.276 1.662 0.276 2.508z",
                                           "width": 10.521,
                                           "height": 10.854,
-                                          "stroke": "#211F1B",
+                                          "stroke": "$line",
                                           "strokeWidth": 1
                                         },
                                         {
@@ -2597,7 +2597,7 @@
                                           "geometry": "M4.428 2.766c0 1.548-1.248 2.748-2.784 2.748l-1.644 0 0-5.514 1.644 0c1.536 0 2.784 1.182 2.784 2.766z",
                                           "width": 2.214,
                                           "height": 2.757,
-                                          "stroke": "#211F1B",
+                                          "stroke": "$line",
                                           "strokeWidth": 1
                                         }
                                       ]
@@ -2663,7 +2663,7 @@
                                           "geometry": "M21.042 10.866c0 0.936-0.048 1.878-0.186 2.73-1.074 4.644-5.472 8.112-10.23 8.112-5.982 0-10.626-4.95-10.626-10.842 0-6.072 4.884-10.866 10.626-10.866 5.064 0 9.198 3.69 10.14 8.358 0.198 0.81 0.276 1.662 0.276 2.508z",
                                           "width": 10.521,
                                           "height": 10.854,
-                                          "stroke": "#211F1B",
+                                          "stroke": "$line",
                                           "strokeWidth": 1
                                         },
                                         {
@@ -2675,7 +2675,7 @@
                                           "geometry": "M4.428 2.766c0 1.548-1.248 2.748-2.784 2.748l-1.644 0 0-5.514 1.644 0c1.536 0 2.784 1.182 2.784 2.766z",
                                           "width": 2.214,
                                           "height": 2.757,
-                                          "stroke": "#211F1B",
+                                          "stroke": "$line",
                                           "strokeWidth": 1
                                         }
                                       ]
@@ -2804,6 +2804,117 @@
                       ]
                     }
                   ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "e3oOk",
+          "name": "Bottom seats / table closing edge",
+          "clip": true,
+          "width": "fill_container",
+          "height": 120,
+          "layout": "none",
+          "children": [
+            {
+              "type": "frame",
+              "id": "nNc0y",
+              "x": 942,
+              "y": 123,
+              "name": "Bottom chair / facing table",
+              "flipX": true,
+              "flipY": true,
+              "clip": true,
+              "width": 220,
+              "height": 220,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "id": "VcMuT",
+                  "x": 0,
+                  "y": 0,
+                  "name": "Unused generated background",
+                  "enabled": false,
+                  "fill": "#ffffff80",
+                  "width": 220,
+                  "height": 220
+                },
+                {
+                  "type": "rectangle",
+                  "id": "HfgQe",
+                  "x": 55.825,
+                  "y": 68.14775000000002,
+                  "name": "Seat outline",
+                  "width": 108.35,
+                  "height": 109.345225,
+                  "stroke": "$line",
+                  "strokeWidth": 1
+                },
+                {
+                  "type": "path",
+                  "id": "bVtAR",
+                  "x": 55.825,
+                  "y": 47.66299999999999,
+                  "name": "Backrest outline",
+                  "flipY": true,
+                  "geometry": "M0 0l0 9.704 78.8 0 0-9.704",
+                  "width": 108.35,
+                  "height": 13.343,
+                  "stroke": "$line",
+                  "strokeWidth": 1
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "C7gB9",
+              "x": 654,
+              "y": 123,
+              "name": "Bottom chair / facing table",
+              "flipX": true,
+              "flipY": true,
+              "clip": true,
+              "width": 220,
+              "height": 220,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "id": "sz3cE",
+                  "x": 0,
+                  "y": 0,
+                  "name": "Unused generated background",
+                  "enabled": false,
+                  "fill": "#ffffff80",
+                  "width": 220,
+                  "height": 220
+                },
+                {
+                  "type": "rectangle",
+                  "id": "lPKcX",
+                  "x": 55.825,
+                  "y": 68.14775000000002,
+                  "name": "Seat outline",
+                  "width": 108.35,
+                  "height": 109.345225,
+                  "stroke": "$line",
+                  "strokeWidth": 1
+                },
+                {
+                  "type": "path",
+                  "id": "SFa0x",
+                  "x": 55.825,
+                  "y": 47.66299999999999,
+                  "name": "Backrest outline",
+                  "flipY": true,
+                  "geometry": "M0 0l0 9.704 78.8 0 0-9.704",
+                  "width": 108.35,
+                  "height": 13.343,
+                  "stroke": "$line",
+                  "strokeWidth": 1
                 }
               ]
             }
@@ -3383,8 +3494,8 @@
                               "name": "Notebook outline",
                               "width": 84.86135999999999,
                               "height": 132.20388,
-                              "stroke": "#211F1B",
-                              "strokeWidth": 0.9
+                              "stroke": "$line",
+                              "strokeWidth": 1
                             },
                             {
                               "type": "path",
@@ -3395,8 +3506,8 @@
                               "geometry": "M0 0l0 183.61699",
                               "width": 0,
                               "height": 132.20424,
-                              "stroke": "#211F1B",
-                              "strokeWidth": 0.9
+                              "stroke": "$line",
+                              "strokeWidth": 1
                             },
                             {
                               "type": "rectangle",
@@ -3406,8 +3517,8 @@
                               "name": "Paper outline",
                               "width": 85.14971999999999,
                               "height": 132.20388,
-                              "stroke": "#211F1B",
-                              "strokeWidth": 0.9
+                              "stroke": "$line",
+                              "strokeWidth": 1
                             },
                             {
                               "type": "path",
@@ -3418,8 +3529,8 @@
                               "geometry": "M0 0l30.07449 0",
                               "width": 21.65364,
                               "height": 0,
-                              "stroke": "#211F1B",
-                              "strokeWidth": 0.9
+                              "stroke": "$line",
+                              "strokeWidth": 1
                             },
                             {
                               "type": "path",
@@ -3430,8 +3541,8 @@
                               "geometry": "M0 0l30.07449 0",
                               "width": 21.65364,
                               "height": 0,
-                              "stroke": "#211F1B",
-                              "strokeWidth": 0.9
+                              "stroke": "$line",
+                              "strokeWidth": 1
                             }
                           ]
                         }
@@ -3567,7 +3678,7 @@
                   "name": "Seat outline",
                   "width": 51.22,
                   "height": 51.69047,
-                  "stroke": "#211F1B",
+                  "stroke": "$line",
                   "strokeWidth": 1
                 },
                 {
@@ -3579,7 +3690,7 @@
                   "geometry": "M0 0l0 9.704 78.8 0 0-9.704",
                   "width": 51.22,
                   "height": 6.307600000000001,
-                  "stroke": "#211F1B",
+                  "stroke": "$line",
                   "strokeWidth": 1
                 }
               ]
@@ -3615,7 +3726,7 @@
                   "name": "Seat outline",
                   "width": 51.22,
                   "height": 51.69047,
-                  "stroke": "#211F1B",
+                  "stroke": "$line",
                   "strokeWidth": 1
                 },
                 {
@@ -3627,7 +3738,7 @@
                   "geometry": "M0 0l0 9.704 78.8 0 0-9.704",
                   "width": 51.22,
                   "height": 6.307600000000001,
-                  "stroke": "#211F1B",
+                  "stroke": "$line",
                   "strokeWidth": 1
                 }
               ]
@@ -3665,8 +3776,8 @@
               "name": "Seat outline",
               "width": 63.04,
               "height": 63.61904,
-              "stroke": "#211F1B",
-              "strokeWidth": 1.1
+              "stroke": "$line",
+              "strokeWidth": 1
             },
             {
               "type": "path",
@@ -3678,8 +3789,8 @@
               "geometry": "M0 0l0 9.704 78.8 0 0-9.704",
               "width": 63.04,
               "height": 7.763200000000001,
-              "stroke": "#211F1B",
-              "strokeWidth": 1.1
+              "stroke": "$line",
+              "strokeWidth": 1
             }
           ]
         },
@@ -3714,8 +3825,8 @@
               "name": "Seat outline",
               "width": 63.04,
               "height": 63.61904,
-              "stroke": "#211F1B",
-              "strokeWidth": 1.1
+              "stroke": "$line",
+              "strokeWidth": 1
             },
             {
               "type": "path",
@@ -3727,8 +3838,8 @@
               "geometry": "M0 0l0 9.704 78.8 0 0-9.704",
               "width": 63.04,
               "height": 7.763200000000001,
-              "stroke": "#211F1B",
-              "strokeWidth": 1.1
+              "stroke": "$line",
+              "strokeWidth": 1
             }
           ]
         },
@@ -4077,7 +4188,7 @@
                       "fill": {
                         "type": "image",
                         "enabled": true,
-                        "url": "generated-1.png",
+                        "url": "panis-editorial.jpg",
                         "mode": "fill"
                       }
                     },
@@ -5169,7 +5280,7 @@
                                           "geometry": "M21.042 10.866c0 0.936-0.048 1.878-0.186 2.73-1.074 4.644-5.472 8.112-10.23 8.112-5.982 0-10.626-4.95-10.626-10.842 0-6.072 4.884-10.866 10.626-10.866 5.064 0 9.198 3.69 10.14 8.358 0.198 0.81 0.276 1.662 0.276 2.508z",
                                           "width": 10.521,
                                           "height": 10.854,
-                                          "stroke": "#211F1B",
+                                          "stroke": "$line",
                                           "strokeWidth": 1
                                         },
                                         {
@@ -5181,7 +5292,7 @@
                                           "geometry": "M4.428 2.766c0 1.548-1.248 2.748-2.784 2.748l-1.644 0 0-5.514 1.644 0c1.536 0 2.784 1.182 2.784 2.766z",
                                           "width": 2.214,
                                           "height": 2.757,
-                                          "stroke": "#211F1B",
+                                          "stroke": "$line",
                                           "strokeWidth": 1
                                         }
                                       ]
@@ -5247,7 +5358,7 @@
                                           "geometry": "M21.042 10.866c0 0.936-0.048 1.878-0.186 2.73-1.074 4.644-5.472 8.112-10.23 8.112-5.982 0-10.626-4.95-10.626-10.842 0-6.072 4.884-10.866 10.626-10.866 5.064 0 9.198 3.69 10.14 8.358 0.198 0.81 0.276 1.662 0.276 2.508z",
                                           "width": 10.521,
                                           "height": 10.854,
-                                          "stroke": "#211F1B",
+                                          "stroke": "$line",
                                           "strokeWidth": 1
                                         },
                                         {
@@ -5259,7 +5370,7 @@
                                           "geometry": "M4.428 2.766c0 1.548-1.248 2.748-2.784 2.748l-1.644 0 0-5.514 1.644 0c1.536 0 2.784 1.182 2.784 2.766z",
                                           "width": 2.214,
                                           "height": 2.757,
-                                          "stroke": "#211F1B",
+                                          "stroke": "$line",
                                           "strokeWidth": 1
                                         }
                                       ]
@@ -5325,7 +5436,7 @@
                                           "geometry": "M21.042 10.866c0 0.936-0.048 1.878-0.186 2.73-1.074 4.644-5.472 8.112-10.23 8.112-5.982 0-10.626-4.95-10.626-10.842 0-6.072 4.884-10.866 10.626-10.866 5.064 0 9.198 3.69 10.14 8.358 0.198 0.81 0.276 1.662 0.276 2.508z",
                                           "width": 10.521,
                                           "height": 10.854,
-                                          "stroke": "#211F1B",
+                                          "stroke": "$line",
                                           "strokeWidth": 1
                                         },
                                         {
@@ -5337,7 +5448,7 @@
                                           "geometry": "M4.428 2.766c0 1.548-1.248 2.748-2.784 2.748l-1.644 0 0-5.514 1.644 0c1.536 0 2.784 1.182 2.784 2.766z",
                                           "width": 2.214,
                                           "height": 2.757,
-                                          "stroke": "#211F1B",
+                                          "stroke": "$line",
                                           "strokeWidth": 1
                                         }
                                       ]
@@ -5464,6 +5575,117 @@
                       ]
                     }
                   ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "Cx7ly",
+          "name": "Bottom seats / mobile table closing edge",
+          "clip": true,
+          "width": "fill_container",
+          "height": 112,
+          "layout": "none",
+          "children": [
+            {
+              "type": "frame",
+              "id": "pguC4",
+              "x": 326,
+              "y": 108,
+              "name": "Bottom chair / mobile facing table",
+              "flipX": true,
+              "flipY": true,
+              "clip": true,
+              "width": 128,
+              "height": 128,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "id": "MCjYo",
+                  "x": 0,
+                  "y": 0,
+                  "name": "Unused generated background",
+                  "enabled": false,
+                  "fill": "#ffffff80",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "type": "rectangle",
+                  "id": "cvqL8",
+                  "x": 32.480000000000004,
+                  "y": 39.649600000000014,
+                  "name": "Seat outline",
+                  "width": 63.04,
+                  "height": 63.61904,
+                  "stroke": "$line",
+                  "strokeWidth": 1
+                },
+                {
+                  "type": "path",
+                  "id": "DCe2w",
+                  "x": 32.480000000000004,
+                  "y": 27.731199999999998,
+                  "name": "Backrest outline",
+                  "flipY": true,
+                  "geometry": "M0 0l0 9.704 78.8 0 0-9.704",
+                  "width": 63.04,
+                  "height": 7.763200000000001,
+                  "stroke": "$line",
+                  "strokeWidth": 1
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "dvphG",
+              "x": 168,
+              "y": 108,
+              "name": "Bottom chair / mobile facing table",
+              "flipX": true,
+              "flipY": true,
+              "clip": true,
+              "width": 128,
+              "height": 128,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "id": "HrHOq",
+                  "x": 0,
+                  "y": 0,
+                  "name": "Unused generated background",
+                  "enabled": false,
+                  "fill": "#ffffff80",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "type": "rectangle",
+                  "id": "PEAuc",
+                  "x": 32.480000000000004,
+                  "y": 39.649600000000014,
+                  "name": "Seat outline",
+                  "width": 63.04,
+                  "height": 63.61904,
+                  "stroke": "$line",
+                  "strokeWidth": 1
+                },
+                {
+                  "type": "path",
+                  "id": "e3Jqf",
+                  "x": 32.480000000000004,
+                  "y": 27.731199999999998,
+                  "name": "Backrest outline",
+                  "flipY": true,
+                  "geometry": "M0 0l0 9.704 78.8 0 0-9.704",
+                  "width": 63.04,
+                  "height": 7.763200000000001,
+                  "stroke": "$line",
+                  "strokeWidth": 1
                 }
               ]
             }
@@ -8600,7 +8822,7 @@
                   "geometry": "M55.74 0l-55.74 0 0 86.38 55.74 0 0-86.38z",
                   "width": 55.74,
                   "height": 86.38,
-                  "stroke": "#211F1B",
+                  "stroke": "$line",
                   "strokeWidth": 1,
                   "strokeLinejoin": "round"
                 },
@@ -8613,7 +8835,7 @@
                   "geometry": "M0 0l0 86.38",
                   "width": 0,
                   "height": 86.38,
-                  "stroke": "#211F1B",
+                  "stroke": "$line",
                   "strokeWidth": 1
                 },
                 {
@@ -8625,7 +8847,7 @@
                   "geometry": "M3.78001 0l-3.78001 0 0 73.52 1.86 8.74 1.92001-8.74 0-73.52z",
                   "width": 3.78,
                   "height": 82.26,
-                  "stroke": "#211F1B",
+                  "stroke": "$line",
                   "strokeWidth": 1,
                   "strokeLinejoin": "round"
                 },
@@ -8638,7 +8860,7 @@
                   "geometry": "M0 0l3.78001 0",
                   "width": 3.78,
                   "height": 0,
-                  "stroke": "#211F1B",
+                  "stroke": "$line",
                   "strokeWidth": 1
                 }
               ]
@@ -8779,7 +9001,7 @@
               "geometry": "M55.74 0l-55.74 0 0 86.38 55.74 0 0-86.38z",
               "width": 55.74,
               "height": 86.38,
-              "stroke": "#211F1B",
+              "stroke": "$line",
               "strokeWidth": 1,
               "strokeLinejoin": "round"
             },
@@ -8792,7 +9014,7 @@
               "geometry": "M0 0l0 86.38",
               "width": 0,
               "height": 86.38,
-              "stroke": "#211F1B",
+              "stroke": "$line",
               "strokeWidth": 1
             },
             {
@@ -8804,7 +9026,7 @@
               "geometry": "M3.78001 0l-3.78001 0 0 73.52 1.86 8.74 1.92001-8.74 0-73.52z",
               "width": 3.78,
               "height": 82.26,
-              "stroke": "#211F1B",
+              "stroke": "$line",
               "strokeWidth": 1,
               "strokeLinejoin": "round"
             },
@@ -8817,7 +9039,7 @@
               "geometry": "M0 0l3.78001 0",
               "width": 3.78,
               "height": 0,
-              "stroke": "#211F1B",
+              "stroke": "$line",
               "strokeWidth": 1
             }
           ]
