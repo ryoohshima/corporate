@@ -1299,7 +1299,7 @@
               "id": "rRNUa",
               "name": "03 / Manifesto",
               "width": "fill_container",
-              "fill": "$canvas",
+              "fill": "$surface",
               "layout": "vertical",
               "gap": 48,
               "padding": [
@@ -1313,8 +1313,8 @@
                   "layoutPosition": "absolute",
                   "x": -32,
                   "y": 0,
-                  "name": "Full-bleed background band",
-                  "fill": "$canvas",
+                  "name": "Full-width white band / text aligned to page grid",
+                  "fill": "$surface",
                   "width": 1440,
                   "height": 599
                 },
@@ -1866,7 +1866,7 @@
               "id": "vnrma",
               "name": "05 / Selected Work — publication pending",
               "width": "fill_container",
-              "fill": "$canvas",
+              "fill": "$surface",
               "layout": "vertical",
               "gap": 48,
               "padding": [
@@ -1880,11 +1880,10 @@
                   "layoutPosition": "absolute",
                   "x": -32,
                   "y": 0,
-                  "name": "Full-bleed background / concrete activities",
-                  "enabled": false,
+                  "name": "Full-width white band / text aligned to page grid",
                   "fill": "$surface",
                   "width": 1440,
-                  "height": 568
+                  "height": 406
                 },
                 {
                   "type": "text",
@@ -2097,73 +2096,84 @@
                     },
                     {
                       "type": "frame",
-                      "id": "M4lIG",
-                      "name": "Notebook and pen / worksheet margin",
+                      "id": "Tw2Ik",
+                      "name": "Coffee / animated steam in implementation",
                       "clip": true,
                       "width": 180,
                       "height": 160,
                       "layout": "none",
                       "children": [
                         {
-                          "type": "rectangle",
-                          "id": "A9GBGr",
-                          "x": 10,
-                          "y": 0,
-                          "name": "Unused generated background",
-                          "enabled": false,
-                          "fill": "#ffffffa6",
-                          "width": 160,
-                          "height": 160
+                          "type": "path",
+                          "id": "uiAZg",
+                          "x": 30.406299999999987,
+                          "y": 18.753700000000002,
+                          "name": "Top-down object outline 17",
+                          "geometry": "M112.76752 32.25c4.1925 8.2775 6.39621 17.415 6.39621 28.32624 0 34.23876-27.89621 59.77001-59.01749 59.77001-35.1525 0-60.14624-27.68126-60.14624-60.03875 0-34.83 26.98251-60.3075 59.93124-60.3075 17.95248 0 33.48624 8.17 43.48374 18.92",
+                          "width": 119.1637,
+                          "height": 120.3463,
+                          "stroke": "#A29283",
+                          "strokeWidth": 1.2
+                        },
+                        {
+                          "type": "ellipse",
+                          "id": "Yc4W0",
+                          "x": 52.567499999999995,
+                          "y": 41.424,
+                          "name": "Top-down object outline 18",
+                          "width": 75.2208,
+                          "height": 75.2208,
+                          "stroke": "#A29283",
+                          "strokeWidth": 1.2
+                        },
+                        {
+                          "type": "ellipse",
+                          "id": "oiE0u",
+                          "x": 55.63850000000002,
+                          "y": 44.5004,
+                          "name": "Top-down object outline 19",
+                          "width": 69.0582,
+                          "height": 69.0582,
+                          "stroke": "#A29283",
+                          "strokeWidth": 1.2
                         },
                         {
                           "type": "path",
-                          "id": "cKkaH",
-                          "x": 54.7,
-                          "y": 36.68,
-                          "name": "Notebook and pen detail 1",
-                          "geometry": "M55.74 0l-55.74 0 0 86.38 55.74 0 0-86.38z",
-                          "width": 55.74,
-                          "height": 86.38,
-                          "stroke": "$line",
-                          "strokeWidth": 1,
-                          "strokeLinejoin": "round"
+                          "id": "sOnx6",
+                          "x": 84.09649999999999,
+                          "y": 67.1287,
+                          "name": "Top-down object outline 20",
+                          "geometry": "M2.53229 0c-1.72 2.95625-3.38623 7.31001-2.04248 10.80375 1.61249 4.46125 4.67624 8.0625 1.55871 13.2225",
+                          "width": 3.3932,
+                          "height": 24.0263,
+                          "stroke": "#8B7B6C",
+                          "strokeWidth": 1.2,
+                          "strokeLinecap": "round"
                         },
                         {
                           "type": "path",
-                          "id": "Y3xuHr",
-                          "x": 58.46,
-                          "y": 36.68,
-                          "name": "Notebook and pen detail 2",
-                          "geometry": "M0 0l0 86.38",
-                          "width": 0,
-                          "height": 86.38,
-                          "stroke": "$line",
-                          "strokeWidth": 1
+                          "id": "JbiP0",
+                          "x": 91.14089999999999,
+                          "y": 68.2575,
+                          "name": "Top-down object outline 21",
+                          "geometry": "M1.6691 0c-1.55875 1.88126-2.25751 4.8375-1.07501 8.11625 1.12875 3.27875 2.74124 6.45 0.59127 9.19124",
+                          "width": 2.2426,
+                          "height": 17.3075,
+                          "stroke": "#8B7B6C",
+                          "strokeWidth": 1.2,
+                          "strokeLinecap": "round"
                         },
                         {
                           "type": "path",
-                          "id": "Q1hdW",
-                          "x": 121.52,
-                          "y": 40.74,
-                          "name": "Notebook and pen detail 3",
-                          "geometry": "M3.78001 0l-3.78001 0 0 73.52 1.86 8.74 1.92001-8.74 0-73.52z",
-                          "width": 3.78,
-                          "height": 82.26,
-                          "stroke": "$line",
-                          "strokeWidth": 1,
-                          "strokeLinejoin": "round"
-                        },
-                        {
-                          "type": "path",
-                          "id": "U4z8T",
-                          "x": 121.52,
-                          "y": 43.42,
-                          "name": "Notebook and pen detail 4",
-                          "geometry": "M0 0l3.78001 0",
-                          "width": 3.78,
-                          "height": 0,
-                          "stroke": "$line",
-                          "strokeWidth": 1
+                          "id": "W5oLkJ",
+                          "x": 117.85750000000002,
+                          "y": 38.0192,
+                          "name": "Top-down object outline 22",
+                          "geometry": "M0 14.00578l17.68375-13.2225c2.36502-1.66625 5.69754-0.5375 7.90127 2.09625 2.04251 2.63375 1.72 6.235-0.85998 8.11625l-17.95252 13.975",
+                          "width": 26.9168,
+                          "height": 24.9708,
+                          "stroke": "#A29283",
+                          "strokeWidth": 1.2
                         }
                       ]
                     }
@@ -2833,7 +2843,7 @@
               "id": "ELBSx",
               "name": "09 / Invitation — Contact",
               "width": "fill_container",
-              "fill": "$canvas",
+              "fill": "$surface",
               "layout": "vertical",
               "gap": 38,
               "padding": [
@@ -2849,8 +2859,8 @@
                   "layoutPosition": "absolute",
                   "x": -32,
                   "y": 0,
-                  "name": "Full-bleed background band",
-                  "fill": "$canvas",
+                  "name": "Full-width white band / text aligned to page grid",
+                  "fill": "$surface",
                   "width": 1440,
                   "height": 541
                 },
@@ -4313,7 +4323,7 @@
               "id": "eu1Y1",
               "name": "03 / Manifesto",
               "width": "fill_container",
-              "fill": "$canvas",
+              "fill": "$surface",
               "layout": "vertical",
               "gap": 32,
               "padding": [
@@ -4327,8 +4337,8 @@
                   "layoutPosition": "absolute",
                   "x": -12,
                   "y": 0,
-                  "name": "Full-bleed background band",
-                  "fill": "$canvas",
+                  "name": "Full-width white band / text aligned to page grid",
+                  "fill": "$surface",
                   "width": 390,
                   "height": 591
                 },
@@ -4879,7 +4889,7 @@
               "id": "n72wfi",
               "name": "05 / Selected Work — publication pending",
               "width": "fill_container",
-              "fill": "$canvas",
+              "fill": "$surface",
               "layout": "vertical",
               "gap": 32,
               "padding": [
@@ -4893,11 +4903,10 @@
                   "layoutPosition": "absolute",
                   "x": -12,
                   "y": 0,
-                  "name": "Full-bleed background / concrete activities",
-                  "enabled": false,
+                  "name": "Full-width white band / text aligned to page grid",
                   "fill": "$surface",
                   "width": 390,
-                  "height": 721
+                  "height": 494
                 },
                 {
                   "type": "text",
@@ -5093,16 +5102,109 @@
                   "letterSpacing": 1.6
                 },
                 {
-                  "type": "text",
-                  "id": "QxyVz",
-                  "name": "Process heading",
-                  "fill": "$ink",
-                  "textGrowth": "fixed-width",
+                  "type": "frame",
+                  "id": "qYWqM",
+                  "name": "Process heading and coffee",
                   "width": "fill_container",
-                  "content": "同じ側で、進めていく。",
-                  "fontFamily": "Noto Serif JP",
-                  "fontSize": 34,
-                  "fontWeight": "normal"
+                  "gap": 24,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "QxyVz",
+                      "name": "Process heading",
+                      "fill": "$ink",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "同じ側で、進めていく。",
+                      "fontFamily": "Noto Serif JP",
+                      "fontSize": 34,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "KBxYv",
+                      "name": "Coffee / animated steam in implementation",
+                      "clip": true,
+                      "width": 120,
+                      "height": 110,
+                      "layout": "none",
+                      "children": [
+                        {
+                          "type": "path",
+                          "id": "hnxBz",
+                          "x": 19.09183124999999,
+                          "y": 12.893168750000001,
+                          "name": "Top-down object outline 17",
+                          "geometry": "M112.76752 32.25c4.1925 8.2775 6.39621 17.415 6.39621 28.32624 0 34.23876-27.89621 59.77001-59.01749 59.77001-35.1525 0-60.14624-27.68126-60.14624-60.03875 0-34.83 26.98251-60.3075 59.93124-60.3075 17.95248 0 33.48624 8.17 43.48374 18.92",
+                          "width": 81.92504375,
+                          "height": 82.73808125,
+                          "stroke": "#A29283",
+                          "strokeWidth": 1.2
+                        },
+                        {
+                          "type": "ellipse",
+                          "id": "bXV2Z",
+                          "x": 34.32765625,
+                          "y": 28.479,
+                          "name": "Top-down object outline 18",
+                          "width": 51.714299999999994,
+                          "height": 51.714299999999994,
+                          "stroke": "#A29283",
+                          "strokeWidth": 1.2
+                        },
+                        {
+                          "type": "ellipse",
+                          "id": "Swsyk",
+                          "x": 36.438968750000015,
+                          "y": 30.594025,
+                          "name": "Top-down object outline 19",
+                          "width": 47.4775125,
+                          "height": 47.4775125,
+                          "stroke": "#A29283",
+                          "strokeWidth": 1.2
+                        },
+                        {
+                          "type": "path",
+                          "id": "w18ZB",
+                          "x": 56.003843749999994,
+                          "y": 46.150981249999994,
+                          "name": "Top-down object outline 20",
+                          "geometry": "M2.53229 0c-1.72 2.95625-3.38623 7.31001-2.04248 10.80375 1.61249 4.46125 4.67624 8.0625 1.55871 13.2225",
+                          "width": 2.332825,
+                          "height": 16.518081249999998,
+                          "stroke": "#8B7B6C",
+                          "strokeWidth": 1.2,
+                          "strokeLinecap": "round"
+                        },
+                        {
+                          "type": "path",
+                          "id": "X7OSzR",
+                          "x": 60.84686874999999,
+                          "y": 46.92703125,
+                          "name": "Top-down object outline 21",
+                          "geometry": "M1.6691 0c-1.55875 1.88126-2.25751 4.8375-1.07501 8.11625 1.12875 3.27875 2.74124 6.45 0.59127 9.19124",
+                          "width": 1.5417874999999999,
+                          "height": 11.898906250000001,
+                          "stroke": "#8B7B6C",
+                          "strokeWidth": 1.2,
+                          "strokeLinecap": "round"
+                        },
+                        {
+                          "type": "path",
+                          "id": "iciuW",
+                          "x": 79.21453125000001,
+                          "y": 26.138199999999998,
+                          "name": "Top-down object outline 22",
+                          "geometry": "M0 14.00578l17.68375-13.2225c2.36502-1.66625 5.69754-0.5375 7.90127 2.09625 2.04251 2.63375 1.72 6.235-0.85998 8.11625l-17.95252 13.975",
+                          "width": 18.5053,
+                          "height": 17.167425,
+                          "stroke": "#A29283",
+                          "strokeWidth": 1.2
+                        }
+                      ]
+                    }
+                  ]
                 },
                 {
                   "type": "frame",
@@ -5762,7 +5864,7 @@
               "id": "HJiwS",
               "name": "09 / Invitation — Contact",
               "width": "fill_container",
-              "fill": "$canvas",
+              "fill": "$surface",
               "layout": "vertical",
               "gap": 32,
               "padding": [
@@ -5776,8 +5878,8 @@
                   "layoutPosition": "absolute",
                   "x": -12,
                   "y": 0,
-                  "name": "Full-bleed background band",
-                  "fill": "$canvas",
+                  "name": "Full-width white band / text aligned to page grid",
+                  "fill": "$surface",
                   "width": 390,
                   "height": 523
                 },
