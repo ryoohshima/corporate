@@ -282,12 +282,15 @@ const principles = [
               <p class="body-lg">
                 まだ、まとまっていなくても大丈夫です。<br />いま考えていることから、聞かせてください。
               </p>
-              <a class="talk" href="mailto:info@panisia.com">
-                話してみる
-                <svg viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M7 17 17 7M7 7h10v10" />
-                </svg>
-              </a>
+              <div class="contact-actions">
+                <a class="talk" href="mailto:info@panisia.com">
+                  話してみる
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M7 17 17 7M7 7h10v10" />
+                  </svg>
+                </a>
+                <p class="contact-email">info@panisia.com</p>
+              </div>
             </div>
           </section>
       </main>
@@ -802,6 +805,16 @@ const principles = [
     width: 28px;
     height: 28px;
   }
+  .contact-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 14px;
+  }
+  .contact-email {
+    color: var(--muted);
+    font: 14px var(--ui);
+  }
 
   /* Footer */
   .site-footer {
@@ -891,6 +904,9 @@ const principles = [
     .split > * {
       flex: none;
       width: 100%;
+    }
+    .contact-actions {
+      align-items: flex-start;
     }
     .table-section {
       gap: 28px;

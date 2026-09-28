@@ -2862,7 +2862,7 @@
                   "name": "Full-width white band / text aligned to page grid",
                   "fill": "$surface",
                   "width": 1440,
-                  "height": 541
+                  "height": 572
                 },
                 {
                   "type": "text",
@@ -2912,38 +2912,58 @@
                     },
                     {
                       "type": "frame",
-                      "id": "b6O9a",
-                      "name": "Talk invitation link",
-                      "stroke": "$accent",
-                      "strokeWidth": {
-                        "bottom": 1
-                      },
-                      "gap": 60,
-                      "padding": [
-                        18,
-                        0
-                      ],
-                      "alignItems": "center",
+                      "id": "F7YdFt",
+                      "name": "Contact actions",
+                      "layout": "vertical",
+                      "gap": 14,
+                      "alignItems": "end",
                       "children": [
                         {
-                          "type": "text",
-                          "id": "qt4Ef",
-                          "name": "Talk label",
-                          "fill": "$accent",
-                          "content": "話してみる",
-                          "fontFamily": "Noto Serif JP",
-                          "fontSize": 25,
-                          "fontWeight": "normal"
+                          "type": "frame",
+                          "id": "b6O9a",
+                          "name": "Talk invitation link",
+                          "stroke": "$accent",
+                          "strokeWidth": {
+                            "bottom": 1
+                          },
+                          "gap": 60,
+                          "padding": [
+                            18,
+                            0
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "qt4Ef",
+                              "name": "Talk label",
+                              "fill": "$accent",
+                              "content": "話してみる",
+                              "fontFamily": "Noto Serif JP",
+                              "fontSize": 25,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "icon",
+                              "id": "a6ao4",
+                              "name": "Invitation arrow",
+                              "width": 28,
+                              "height": 28,
+                              "icon": "arrow-up-right",
+                              "library": "lucide",
+                              "fill": "$accent"
+                            }
+                          ]
                         },
                         {
-                          "type": "icon",
-                          "id": "a6ao4",
-                          "name": "Invitation arrow",
-                          "width": 28,
-                          "height": 28,
-                          "icon": "arrow-up-right",
-                          "library": "lucide",
-                          "fill": "$accent"
+                          "type": "text",
+                          "id": "L7LVLN",
+                          "name": "Contact email",
+                          "fill": "$muted",
+                          "content": "info@panisia.com",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
                         }
                       ]
                     }
@@ -5881,7 +5901,7 @@
                   "name": "Full-width white band / text aligned to page grid",
                   "fill": "$surface",
                   "width": 390,
-                  "height": 523
+                  "height": 554
                 },
                 {
                   "type": "text",
@@ -5931,38 +5951,57 @@
                     },
                     {
                       "type": "frame",
-                      "id": "voalz",
-                      "name": "Talk invitation link",
-                      "stroke": "$accent",
-                      "strokeWidth": {
-                        "bottom": 1
-                      },
-                      "gap": 44,
-                      "padding": [
-                        18,
-                        0
-                      ],
-                      "alignItems": "center",
+                      "id": "wwPvJ",
+                      "name": "Contact actions",
+                      "layout": "vertical",
+                      "gap": 14,
                       "children": [
                         {
-                          "type": "text",
-                          "id": "rO5cg",
-                          "name": "Talk label",
-                          "fill": "$accent",
-                          "content": "話してみる",
-                          "fontFamily": "Noto Serif JP",
-                          "fontSize": 24,
-                          "fontWeight": "normal"
+                          "type": "frame",
+                          "id": "voalz",
+                          "name": "Talk invitation link",
+                          "stroke": "$accent",
+                          "strokeWidth": {
+                            "bottom": 1
+                          },
+                          "gap": 44,
+                          "padding": [
+                            18,
+                            0
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "rO5cg",
+                              "name": "Talk label",
+                              "fill": "$accent",
+                              "content": "話してみる",
+                              "fontFamily": "Noto Serif JP",
+                              "fontSize": 24,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "icon",
+                              "id": "C54PYY",
+                              "name": "Invitation arrow",
+                              "width": 28,
+                              "height": 28,
+                              "icon": "arrow-up-right",
+                              "library": "lucide",
+                              "fill": "$accent"
+                            }
+                          ]
                         },
                         {
-                          "type": "icon",
-                          "id": "C54PYY",
-                          "name": "Invitation arrow",
-                          "width": 28,
-                          "height": 28,
-                          "icon": "arrow-up-right",
-                          "library": "lucide",
-                          "fill": "$accent"
+                          "type": "text",
+                          "id": "vBeha",
+                          "name": "Contact email",
+                          "fill": "$muted",
+                          "content": "info@panisia.com",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
                         }
                       ]
                     }
