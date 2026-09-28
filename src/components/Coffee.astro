@@ -44,14 +44,14 @@ import artwork from "../assets/coffee.svg?raw";
   .drawing { height: 160px; }
   .drawing :global(> svg) { display: block; width: 100%; height: 100%; }
   .drawing :global(path), .drawing :global(ellipse) { fill: none; stroke: #a29283; stroke-width: 1.2; }
-  .drawing :global(.steam path) { stroke-width: .65; }
+  .drawing :global(.steam path) { stroke: #8b7b6c; stroke-width: 1.2; stroke-linecap: round; }
   .drawing :global(.steam) { transform-box: fill-box; transform-origin: center; animation: drift 7s ease-in-out infinite paused; }
   .drawing :global(.steam:nth-last-child(2)) { animation-delay: -3.5s; }
   .running .drawing :global(.steam) { animation-play-state: running; }
   @keyframes drift {
-    0%, 100% { opacity: .2; transform: translate(0, 2px) scale(.95); }
-    45% { opacity: .85; transform: translate(-3px, -5px) scale(1.12); }
-    75% { opacity: .25; transform: translate(2px, -9px) scale(1.2); }
+    0%, 100% { opacity: .6; transform: translate(0, 2px) scale(.95); }
+    45% { opacity: 1; transform: translate(-3px, -5px) scale(1.12); }
+    75% { opacity: .65; transform: translate(2px, -9px) scale(1.2); }
   }
   button { display: block; margin-inline: auto; padding: 5px; border: 0; background: transparent; color: #6f6a61; font: 10px/1.8 serif; cursor: pointer; }
   button[hidden] { display: none; }

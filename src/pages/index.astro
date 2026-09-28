@@ -221,17 +221,6 @@ const principles = [
                 </p>
               </div>
             </div>
-            <hr />
-            <div class="split">
-              <div class="stack attribution">
-                <p class="label">WHAT THEY BROUGHT</p>
-                <p class="attribution-title">お客様の知識と経験</p>
-              </div>
-              <div class="stack attribution">
-                <p class="label">WHAT Panisia BROUGHT</p>
-                <p class="attribution-title">私たちの設計と技術</p>
-              </div>
-            </div>
           </section>
 
           <section class="section">
@@ -445,7 +434,6 @@ const principles = [
     max-width: 1440px;
     margin-inline: auto;
     padding: 0 32px;
-    overflow-x: clip;
   }
   .label {
     color: var(--muted);
@@ -572,8 +560,11 @@ const principles = [
     background: var(--bg);
     scroll-margin-top: 24px;
   }
+  /* 背景だけを画面端まで広げ、本文は共通の縦ラインに揃える */
   .tint {
     background: var(--bg-tint);
+    box-shadow: 0 0 0 100vmax var(--bg-tint);
+    clip-path: inset(0 -100vmax);
   }
   .split {
     display: flex;
@@ -727,12 +718,6 @@ const principles = [
   }
   .status {
     font: 20px var(--serif);
-  }
-  .attribution {
-    gap: 16px;
-  }
-  .attribution-title {
-    font: 24px var(--serif);
   }
 
   .process-heading {
