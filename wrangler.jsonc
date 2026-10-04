@@ -1,9 +1,18 @@
 {
   "$schema": "./node_modules/wrangler/config-schema.json",
   "name": "panisia-corporate",
+  "main": "./worker/index.ts",
   "compatibility_date": "2026-09-27",
   "assets": {
     "directory": "./dist"
+  },
+  // Gmail API 送信用の OAuth クライアントと、info@panisia.com のリフレッシュトークン
+  "secrets": {
+    "required": [
+      "GOOGLE_CLIENT_ID",
+      "GOOGLE_CLIENT_SECRET",
+      "GOOGLE_REFRESH_TOKEN"
+    ]
   },
   "routes": [{ "pattern": "panisia.com", "custom_domain": true }],
   "previews": {}
