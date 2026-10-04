@@ -1,0 +1,146 @@
+---
+import Base from "../layouts/Base.astro";
+---
+
+<Base title="お問い合わせ | Panisia">
+  <section class="section contact-form">
+    <p class="label">CONTACT</p>
+    <h1 class="heading-md">お問い合わせ</h1>
+    <p class="body-sm">
+      まだ、まとまっていなくても大丈夫です。いま考えていることから、聞かせてください。
+    </p>
+
+    <form method="post" action="/api/contact">
+      <label>
+        <span>お名前<span class="required">必須</span></span>
+        <input name="name" required maxlength="100" autocomplete="name" />
+      </label>
+      <label>
+        <span>会社名・団体名</span>
+        <input name="company" maxlength="100" autocomplete="organization" />
+      </label>
+      <label>
+        <span>メールアドレス<span class="required">必須</span></span>
+        <input
+          name="email"
+          type="email"
+          required
+          maxlength="254"
+          autocomplete="email"
+        />
+      </label>
+      <label>
+        <span>お問い合わせ内容<span class="required">必須</span></span>
+        <textarea name="message" required maxlength="5000" rows="8"></textarea>
+      </label>
+      <!-- スパム対策: 人には見えない欄。入力があれば送信を破棄する -->
+      <input
+        class="trap"
+        name="website"
+        tabindex="-1"
+        autocomplete="off"
+        aria-hidden="true"
+      />
+      <label class="consent">
+        <input type="checkbox" name="consent" required />
+        <span><a href="/privacy/">プライバシーポリシー</a>に同意する</span>
+      </label>
+      <button type="submit">送信する</button>
+      <p class="form-status" role="status"></p>
+    </form>
+    <noscript>
+      <p class="body-sm">
+        フォームの送信には JavaScript が必要です。info@panisia.com へ直接ご連絡いただくこともできます。
+      </p>
+    </noscript>
+  </section>
+</Base>
+
+<script>
+  const form = document.querySelector<HTMLFormElement>(".contact-form form");
+  const status = document.querySelector<HTMLElement>(".form-status");
+
+  form?.addEventListener("submit", async (event) => {
+    event.preventDefault();
+    const button = form.querySelector("button");
+    if (!button || !status) return;
+    button.disabled = true;
+    status.textContent = "送信しています…";
+    try {
+      const response = await fetch(form.action, {
+        method: "POST",
+        body: new FormData(form),
+      });
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+      form.reset();
+      status.textContent =
+        "送信しました。内容を確認のうえ、ご連絡いたします。";
+    } catch (error) {
+      console.error(error);
+      // 入力内容は残し、再送信できるようにする
+      status.textContent =
+        "送信できませんでした。時間をおいて再度お試しいただくか、info@panisia.com へ直接ご連絡ください。";
+    } finally {
+      button.disabled = false;
+    }
+  });
+</script>
+
+<style>
+  .contact-form {
+    max-width: 800px;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
+  label {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 16px;
+  }
+  .required {
+    margin-left: 10px;
+    color: var(--accent);
+    font: 12px var(--ui);
+  }
+  input,
+  textarea {
+    padding: 12px 14px;
+    border: 1px solid var(--line);
+    border-radius: 0;
+    background: var(--bg-tint);
+    color: inherit;
+    font: 16px var(--serif);
+  }
+  .trap {
+    position: absolute;
+    left: -9999px;
+  }
+  .consent {
+    flex-direction: row;
+    align-items: center;
+  }
+  .consent a {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
+  button {
+    align-self: flex-start;
+    padding: 14px 48px;
+    border: 1px solid var(--accent);
+    background: none;
+    color: var(--accent);
+    font: 18px var(--serif);
+    cursor: pointer;
+  }
+  button:disabled {
+    opacity: 0.5;
+    cursor: wait;
+  }
+  .form-status {
+    font-size: 16px;
+  }
+</style>

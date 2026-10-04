@@ -1,0 +1,136 @@
+---
+import Base from "../layouts/Base.astro";
+
+// TODO: 公開前に【要記入】の箇所（事業者名・所在地・代表者名・制定日）を実際の情報に置き換える
+---
+
+<Base title="プライバシーポリシー | Panisia">
+  <article class="section legal">
+    <p class="label">PRIVACY POLICY</p>
+    <h1 class="heading-md">プライバシーポリシー</h1>
+    <p class="body-sm">
+      Panisia（以下「当方」）は、お問い合わせ等を通じてお預かりする個人情報を、個人情報の保護に関する法律その他の関係法令に従い、以下のとおり適切に取り扱います。
+    </p>
+
+    <section>
+      <h2>1. 取得する情報</h2>
+      <p>お問い合わせフォームまたはメールにより、次の情報を取得します。</p>
+      <ul>
+        <li>お名前、会社名・団体名</li>
+        <li>メールアドレス</li>
+        <li>お問い合わせ内容</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>2. 利用目的</h2>
+      <ul>
+        <li>お問い合わせへの回答・ご連絡のため</li>
+        <li>ご依頼いただいた業務の打ち合わせ・提案・提供のため</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>3. 第三者提供</h2>
+      <p>
+        法令に基づく場合を除き、ご本人の同意なく個人情報を第三者に提供しません。
+      </p>
+    </section>
+
+    <section>
+      <h2>4. 外部サービスの利用</h2>
+      <p>本サイトでは、次の外部サービスを利用しています。</p>
+      <ul>
+        <li>
+          Cloudflare（サイトの配信）：<a
+            href="https://www.cloudflare.com/privacypolicy/"
+            >Cloudflare のプライバシーポリシー</a
+          >
+        </li>
+        <li>
+          Google Workspace（お問い合わせ内容のメール送受信）：<a
+            href="https://policies.google.com/privacy?hl=ja"
+            >Google のプライバシーポリシー</a
+          >
+        </li>
+        <li>
+          Google Fonts（Web フォントの配信。閲覧時に IP アドレス等が Google に送信されます）：<a
+            href="https://policies.google.com/privacy?hl=ja"
+            >Google のプライバシーポリシー</a
+          >
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>5. 安全管理</h2>
+      <p>
+        取得した個人情報の漏えい、滅失または毀損を防ぐため、必要かつ適切な安全管理措置を講じます。利用目的を達成した個人情報は、適切な方法で削除します。
+      </p>
+    </section>
+
+    <section>
+      <h2>6. 開示等のご請求</h2>
+      <p>
+        ご本人から個人情報の開示、訂正、利用停止、削除等のご請求があった場合は、ご本人であることを確認のうえ、法令に従い遅滞なく対応します。下記の窓口までご連絡ください。
+      </p>
+    </section>
+
+    <section>
+      <h2>7. 改定</h2>
+      <p>
+        本ポリシーは、法令の変更等に応じて改定することがあります。改定後の内容は本ページに掲載した時点から効力を生じます。
+      </p>
+    </section>
+
+    <section>
+      <h2>8. お問い合わせ窓口</h2>
+      <dl>
+        <dt>事業者名</dt>
+        <dd>【要記入】</dd>
+        <dt>所在地</dt>
+        <dd>【要記入】</dd>
+        <dt>代表者</dt>
+        <dd>【要記入】</dd>
+        <dt>メール</dt>
+        <dd><a href="mailto:info@panisia.com">info@panisia.com</a></dd>
+      </dl>
+    </section>
+
+    <p class="label">制定日：【要記入】</p>
+  </article>
+</Base>
+
+<style>
+  .legal {
+    max-width: 800px;
+    gap: 40px;
+  }
+  .legal section {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-size: 16px;
+    line-height: 30px;
+  }
+  .legal h2 {
+    font-size: 20px;
+  }
+  .legal ul {
+    list-style: disc;
+    padding-left: 1.5em;
+  }
+  .legal a {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
+  dl {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 8px 24px;
+    margin: 0;
+  }
+  dd {
+    margin: 0;
+  }
+</style>
