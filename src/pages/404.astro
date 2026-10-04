@@ -1,0 +1,63 @@
+---
+import Base from "../layouts/Base.astro";
+---
+
+<Base title="ページが見つかりません | Panisia">
+  <section class="section not-found">
+    <div class="split center">
+      <div class="stack">
+        <p class="label">404 / AN EMPTY SEAT</p>
+        <h1 class="heading-md">この席は、<br />まだ空いています。</h1>
+        <p class="echo">Not here, but still at the table.</p>
+        <p class="body-lg">
+          お探しのページは、移動したか、まだ用意されていないようです。テーブルに戻って、もう一度一緒に探しましょう。
+        </p>
+        <div class="actions">
+          <a class="talk" href="/">
+            テーブルに戻る
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M7 17 17 7M7 7h10v10" />
+            </svg>
+          </a>
+          <a class="label" href="/contact/">探しものを相談する ↗</a>
+        </div>
+      </div>
+      <!-- トップの「テーブル」と同じ椅子を、天板の縁から引き出した状態で置く -->
+      <svg class="empty-seat" viewBox="0 40 220 200" aria-hidden="true">
+        <path d="M0 60h220" />
+        <g transform="translate(0 260) scale(1 -1)">
+          <rect x="55.825" y="68.148" width="108.35" height="109.345" />
+          <path d="M55.825 47.663V34.32h108.35v13.343" />
+        </g>
+      </svg>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .not-found {
+    min-height: 60vh;
+    justify-content: center;
+  }
+  .actions {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+  .empty-seat {
+    width: 100%;
+    max-width: 320px;
+    justify-self: center;
+    margin-inline: auto;
+    color: var(--line);
+  }
+  @media (max-width: 800px) {
+    .heading-md br {
+      display: inline;
+    }
+    .empty-seat {
+      max-width: 200px;
+    }
+  }
+</style>
