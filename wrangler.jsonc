@@ -4,7 +4,10 @@
   "main": "./worker/index.ts",
   "compatibility_date": "2026-09-27",
   "assets": {
-    "directory": "./dist"
+    "directory": "./dist",
+    "not_found_handling": "404-page",
+    // 404 ページより先に API を Worker へ通す
+    "run_worker_first": ["/api/*"]
   },
   // Gmail API 送信用の OAuth クライアントと、info@panisia.com のリフレッシュトークン
   "secrets": {
