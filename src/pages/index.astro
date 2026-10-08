@@ -1,7 +1,6 @@
 ---
 import { Image } from "astro:assets";
 import panis from "../assets/panis.jpg";
-import Coffee from "../components/Coffee.astro";
 import HeroFrames from "../components/HeroFrames.astro";
 import Base from "../layouts/Base.astro";
 
@@ -16,39 +15,6 @@ const weBring = [
   "Technology",
   "Web / AIへの知識",
   "つくり、改善し続ける力",
-];
-const capabilities = [
-  ["Web Design", "伝えたいことが、伝わる設計。"],
-  ["Frontend Development", "使う人に自然な、確かな実装。"],
-  ["CMS / Content Systems", "日々の発信を、自分たちの手で。"],
-  ["SEO / AI Search", "見つけてもらうための、土台づくり。"],
-  ["Maintenance / Improvement", "公開してからも、一緒に育てる。"],
-];
-const steps = [
-  [
-    "Listen",
-    "まず、聴く。",
-    "事業のこと、現場のこと。",
-    "まだ言葉にならない違和感も。",
-  ],
-  [
-    "Align",
-    "目線を、そろえる。",
-    "何を解くのか、どこへ向かうのか。",
-    "共通の目的を見つけます。",
-  ],
-  [
-    "Make",
-    "一緒に、つくる。",
-    "試し、確かめ、対話する。",
-    "小さな判断を重ねてかたちに。",
-  ],
-  [
-    "Grow",
-    "その先も、育てる。",
-    "公開は、次のはじまり。",
-    "使われ方を見ながら改善します。",
-  ],
 ];
 const principles = [
   "対話を大切にする。",
@@ -143,71 +109,11 @@ const principles = [
             </div>
           </section>
 
-          <section id="services" class="section services">
-            <div class="split">
-              <div class="stack tight">
-                <p class="label">04 / WHAT WE MAKE TOGETHER</p>
-                <h2 class="heading-lg">一緒に考え、<br />かたちにする。</h2>
-              </div>
-              <p class="body-lg">
-                課題に合わせて、必要なものを。<br />設計から開発、公開後の改善まで、<br />ひとつながりのものづくりを支えます。
-              </p>
-            </div>
-            <ol class="capabilities">
-              {
-                capabilities.map(([name, description], i) => (
-                  <li>
-                    <span class="label">{String(i + 1).padStart(2, "0")}</span>
-                    <span class="capability">{name}</span>
-                    <span class="capability-description">{description}</span>
-                  </li>
-                ))
-              }
-            </ol>
-          </section>
-
-          <section class="section tint">
-            <p class="label">05 / SELECTED WORK</p>
-            <div class="split">
-              <h2 class="work-heading">一緒につくったもの。<br />その背景にあること。</h2>
-              <div class="stack tight">
-                <p class="status">事例は、ただいま掲載準備中です。</p>
-                <p class="body-sm">
-                  完成したものだけでなく、出発点となった課題、<br />お互いが持ち寄った知識、そこから得た学びまで。<br />私たちの仕事の過程をお伝えしていきます。
-                </p>
-              </div>
-            </div>
-          </section>
-
-          <section class="section">
-            <p class="label">06 / HOW WE WORK</p>
-            <div class="process-heading">
-              <h2 class="heading-md">同じ側で、進めていく。</h2>
-              <Coffee />
-            </div>
-            <ol class="process">
-              {
-                steps.map(([verb, title, line1, line2], i) => (
-                  <li>
-                    <span class="label">{String(i + 1).padStart(2, "0")}</span>
-                    <span class="verb">{verb}</span>
-                    <span class="process-title">{title}</span>
-                    <span class="body-sm">
-                      {line1}
-                      <br />
-                      {line2}
-                    </span>
-                  </li>
-                ))
-              }
-            </ol>
-          </section>
-
           <section id="about" class="section about">
             <hr />
             <div class="split">
               <div class="stack">
-                <p class="label">07 / ABOUT Panisia</p>
+                <p class="label">04 / ABOUT Panisia</p>
                 <h2 class="heading-md">人に近く。<br />技術には、誠実に。</h2>
               </div>
               <div class="stack">
@@ -232,7 +138,7 @@ const principles = [
           </section>
 
           <section id="contact" class="section tint contact">
-            <p class="label">08 / AN INVITATION</p>
+            <p class="label">05 / AN INVITATION</p>
             <h2 class="contact-heading">同じテーブルで、<br />話しましょう。</h2>
             <div class="invitation">
               <p class="body-lg">

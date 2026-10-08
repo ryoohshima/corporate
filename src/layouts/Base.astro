@@ -10,10 +10,12 @@ const {
 } = Astro.props;
 
 const nav = [
-  { href: "/#approach", label: "Our approach" },
-  { href: "/#services", label: "What we do" },
-  { href: "/#about", label: "About" },
+  { href: "/", label: "Vision" },
+  { href: "/services/", label: "What we do" },
+  { href: "/works/", label: "Work" },
 ];
+const current = (href: string) =>
+  Astro.url.pathname === href ? "page" : undefined;
 ---
 
 <html lang="ja">
@@ -40,8 +42,8 @@ const nav = [
       <header class="site-header">
         <a class="wordmark" href="/">Panisia</a>
         <nav class="nav" aria-label="メイン">
-          {nav.map((item) => <a href={item.href}>{item.label}</a>)}
-          <a class="accent" href="/#contact">話してみる ↗</a>
+          {nav.map((item) => <a href={item.href} aria-current={current(item.href)}>{item.label}</a>)}
+          <a class="accent" href="/contact/" aria-current={current("/contact/")}>話してみる ↗</a>
         </nav>
         <details class="menu">
           <summary aria-label="メニュー">
@@ -50,8 +52,8 @@ const nav = [
             </svg>
           </summary>
           <nav aria-label="メイン（モバイル）">
-            {nav.map((item) => <a href={item.href}>{item.label}</a>)}
-            <a class="accent" href="/#contact">話してみる ↗</a>
+            {nav.map((item) => <a href={item.href} aria-current={current(item.href)}>{item.label}</a>)}
+            <a class="accent" href="/contact/" aria-current={current("/contact/")}>話してみる ↗</a>
           </nav>
         </details>
       </header>
