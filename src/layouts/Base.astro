@@ -111,9 +111,22 @@ const nav = [
   html {
     scroll-behavior: smooth;
   }
+  /* ページ遷移: ヘッダーは固定し、本文をクロスフェード（非対応ブラウザは通常遷移） */
+  @view-transition {
+    navigation: auto;
+  }
+  .site-header {
+    view-transition-name: site-header;
+  }
+  ::view-transition-group(root) {
+    animation-duration: 0.4s;
+  }
   @media (prefers-reduced-motion: reduce) {
     html {
       scroll-behavior: auto;
+    }
+    @view-transition {
+      navigation: none;
     }
   }
   body {
