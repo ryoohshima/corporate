@@ -1,0 +1,87 @@
+---
+import Coffee from "../components/Coffee.astro";
+import Base from "../layouts/Base.astro";
+
+const capabilities = [
+  ["Web Design", "伝えたいことが、伝わる設計。"],
+  ["Frontend Development", "使う人に自然な、確かな実装。"],
+  ["CMS / Content Systems", "日々の発信を、自分たちの手で。"],
+  ["SEO / AI Search", "見つけてもらうための、土台づくり。"],
+  ["Maintenance / Improvement", "公開してからも、一緒に育てる。"],
+];
+const steps = [
+  [
+    "Listen",
+    "まず、聴く。",
+    "事業のこと、現場のこと。",
+    "まだ言葉にならない違和感も。",
+  ],
+  [
+    "Align",
+    "目線を、そろえる。",
+    "何を解くのか、どこへ向かうのか。",
+    "共通の目的を見つけます。",
+  ],
+  [
+    "Make",
+    "一緒に、つくる。",
+    "試し、確かめ、対話する。",
+    "小さな判断を重ねてかたちに。",
+  ],
+  [
+    "Grow",
+    "その先も、育てる。",
+    "公開は、次のはじまり。",
+    "使われ方を見ながら改善します。",
+  ],
+];
+---
+
+<Base title="事業内容 | Panisia">
+          <section id="services" class="section services">
+            <div class="split">
+              <div class="stack tight">
+                <p class="label">01 / WHAT WE MAKE TOGETHER</p>
+                <h1 class="heading-lg">一緒に考え、<br />かたちにする。</h1>
+              </div>
+              <p class="body-lg">
+                課題に合わせて、必要なものを。<br />設計から開発、公開後の改善まで、<br />ひとつながりのものづくりを支えます。
+              </p>
+            </div>
+            <ol class="capabilities">
+              {
+                capabilities.map(([name, description], i) => (
+                  <li>
+                    <span class="label">{String(i + 1).padStart(2, "0")}</span>
+                    <span class="capability">{name}</span>
+                    <span class="capability-description">{description}</span>
+                  </li>
+                ))
+              }
+            </ol>
+          </section>
+
+          <section class="section">
+            <p class="label">02 / HOW WE WORK</p>
+            <div class="process-heading">
+              <h2 class="heading-md">同じ側で、進めていく。</h2>
+              <Coffee />
+            </div>
+            <ol class="process">
+              {
+                steps.map(([verb, title, line1, line2], i) => (
+                  <li>
+                    <span class="label">{String(i + 1).padStart(2, "0")}</span>
+                    <span class="verb">{verb}</span>
+                    <span class="process-title">{title}</span>
+                    <span class="body-sm">
+                      {line1}
+                      <br />
+                      {line2}
+                    </span>
+                  </li>
+                ))
+              }
+            </ol>
+          </section>
+</Base>
