@@ -15,7 +15,7 @@
     "deploy": "astro build && wrangler deploy"
   },
   "dependencies": {
-    "astro": "^7.3.5",
+    "astro": "^7.3.8",
     "sharp": "^0.35.5",
     "three": "^0.186.1"
   },
